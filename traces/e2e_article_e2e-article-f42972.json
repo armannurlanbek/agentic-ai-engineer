@@ -1,0 +1,392 @@
+{
+  "case": {
+    "name": "article",
+    "content_type": "article",
+    "user_topic": "The economics of specialty coffee sourcing and why direct-trade margins are misunderstood",
+    "note": "RAG-MISS (non-AI topic) — tests graceful degradation + fact-checker web fallback"
+  },
+  "run_id": "e2e-article-f42972",
+  "wall_ms": 176499,
+  "trace_summary": {
+    "total_duration_ms": 176495.02,
+    "total_tokens": 85250,
+    "total_llm_calls": 10
+  },
+  "traces": [
+    {
+      "node_name": "discovery",
+      "started_at": 1780036558.5137618,
+      "finished_at": 1780036573.7265394,
+      "duration_ms": 15212.78,
+      "input_summary": "The economics of specialty coffee sourcing and why direct-trade margins are misunderstood",
+      "output_summary": "TOPIC: The economics of specialty coffee sourcing and why direct-trade margins are misunderstood\nCONTENT TYPE: article\nKEY FACTS:\n- In February 2025, the International Coffee Organization's Composite ...",
+      "prompt_tokens": 1899,
+      "completion_tokens": 548,
+      "total_tokens": 2447,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "retrieval",
+      "started_at": 1780036573.72961,
+      "finished_at": 1780036574.7169204,
+      "duration_ms": 987.31,
+      "input_summary": "The economics of specialty coffee sourcing and why direct-trade margins are misunderstood",
+      "output_summary": "['voice_samples', 'rag_context']",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "angle",
+      "started_at": 1780036574.7189193,
+      "finished_at": 1780036586.002655,
+      "duration_ms": 11283.74,
+      "input_summary": "The economics of specialty coffee sourcing and why direct-trade margins are misunderstood",
+      "output_summary": "['all_angles', 'selected_angles', 'angle_strategy_note']",
+      "prompt_tokens": 4322,
+      "completion_tokens": 1113,
+      "total_tokens": 5435,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "draft_writer",
+      "started_at": 1780036586.0046532,
+      "finished_at": 1780036616.4118762,
+      "duration_ms": 30407.22,
+      "input_summary": "The economics of specialty coffee sourcing and why direct-trade margins are misunderstood",
+      "output_summary": "# The Economics of Specialty Coffee Sourcing and Why Direct-Trade Margins Are Misunderstood\n\nIn the world of specialty coffee sourcing, direct trade has long been hailed as a more ethical and transpar...",
+      "prompt_tokens": 8813,
+      "completion_tokens": 3149,
+      "total_tokens": 11962,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "critic",
+      "started_at": 1780036616.4128807,
+      "finished_at": 1780036619.6348934,
+      "duration_ms": 3222.01,
+      "input_summary": "The economics of specialty coffee sourcing and why direct-trade margins are misunderstood",
+      "output_summary": "['critic_verdict', 'draft_passed', 'critic_feedback_history']",
+      "prompt_tokens": 2599,
+      "completion_tokens": 353,
+      "total_tokens": 2952,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "draft_writer",
+      "started_at": 1780036619.6398952,
+      "finished_at": 1780036650.1665757,
+      "duration_ms": 30526.68,
+      "input_summary": "The economics of specialty coffee sourcing and why direct-trade margins are misunderstood",
+      "output_summary": "# The Economics of Specialty Coffee Sourcing and Why Direct-Trade Margins Are Misunderstood\n\nSpecialty coffee sourcing has seen direct trade praised as more ethical and transparent compared to traditi...",
+      "prompt_tokens": 10642,
+      "completion_tokens": 2946,
+      "total_tokens": 13588,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "critic",
+      "started_at": 1780036650.1675758,
+      "finished_at": 1780036655.0880907,
+      "duration_ms": 4920.51,
+      "input_summary": "The economics of specialty coffee sourcing and why direct-trade margins are misunderstood",
+      "output_summary": "['critic_verdict', 'draft_passed', 'critic_feedback_history']",
+      "prompt_tokens": 2534,
+      "completion_tokens": 449,
+      "total_tokens": 2983,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "draft_writer",
+      "started_at": 1780036655.0890949,
+      "finished_at": 1780036667.847161,
+      "duration_ms": 12758.07,
+      "input_summary": "The economics of specialty coffee sourcing and why direct-trade margins are misunderstood",
+      "output_summary": "# The Economics of Specialty Coffee Sourcing and Why Direct-Trade Margins Are Misunderstood\n\nSpecialty coffee sourcing has seen direct trade praised as more ethical and transparent compared to traditi...",
+      "prompt_tokens": 6546,
+      "completion_tokens": 1531,
+      "total_tokens": 8077,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "critic",
+      "started_at": 1780036667.8491611,
+      "finished_at": 1780036672.9136977,
+      "duration_ms": 5064.54,
+      "input_summary": "The economics of specialty coffee sourcing and why direct-trade margins are misunderstood",
+      "output_summary": "['critic_verdict', 'draft_passed', 'critic_feedback_history']",
+      "prompt_tokens": 2384,
+      "completion_tokens": 474,
+      "total_tokens": 2858,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "fact_checker",
+      "started_at": 1780036672.9157052,
+      "finished_at": 1780036709.6793184,
+      "duration_ms": 36763.61,
+      "input_summary": "The economics of specialty coffee sourcing and why direct-trade margins are misunderstood",
+      "output_summary": "['fact_check_results', 'post_factcheck_draft']",
+      "prompt_tokens": 20432,
+      "completion_tokens": 2830,
+      "total_tokens": 23262,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "voice_reviewer",
+      "started_at": 1780036709.68032,
+      "finished_at": 1780036735.0087855,
+      "duration_ms": 25328.47,
+      "input_summary": "The economics of specialty coffee sourcing and why direct-trade margins are misunderstood",
+      "output_summary": "# The Economics of Specialty Coffee Sourcing and Why Direct-Trade Margins Are Misunderstood\n\nSpecialty coffee sourcing has seen direct trade praised as more ethical and transparent compared to traditi...",
+      "prompt_tokens": 8670,
+      "completion_tokens": 3016,
+      "total_tokens": 11686,
+      "error": null,
+      "metadata": {}
+    }
+  ],
+  "draft_iteration": 3,
+  "draft_passed": false,
+  "selected_topic_summary": "TOPIC: The economics of specialty coffee sourcing and why direct-trade margins are misunderstood\nCONTENT TYPE: article\nKEY FACTS:\n- In February 2025, the International Coffee Organization's Composite Indicator Price (I-CIP) averaged 354.32 US cents/lb, the highest monthly average on record. (source: mmcginvest.com)\n- Arabica futures hit $4.40 per pound in February 2025, up 109% over the past year. (source: intelligence.coffee)\n- JDE Peet's absorbed €1.6 billion in cost inflation during 2025 and passed on 19.5% in pricing increases to consumers. (source: matteoborea.it)\n- Nestlé's trading operating profit margin dropped 130 basis points from coffee and cocoa costs alone. (source: matteoborea.it)\n- Direct trade agreements aim to stabilize pricing and provide full transparency in the coffee supply chain. (source: clivecoffee.com)\n- Boutique green coffee traders are unable to hedge against price shocks, affecting their profitability. (source: intelligence.coffee)\n- Transparency in direct trade allows businesses to trace coffee back to the farm, enhancing authenticity. (source: lannacoffeeco.com)\nTENSIONS:\n- The viability of direct trade as an ethical choice is questioned under high price volatility. (source: perfectdailygrind.com)\n- Large corporations signal margin relief while remaining cautious about genuine economic recovery. (source: matteoborea.it)\n- Smaller traders face difficulties sustaining operations compared to larger corporations due to financial constraints. (source: intelligence.coffee)\nANGLE SEEDS:\n- Is the direct trade model sustainable under escalating global market pressures, or does it require revisions?\n- How do large coffee corporations' pricing strategies affect the perceived ethicality of direct trade?\n- Could direct trade practices be the key to long-term stability in the volatile coffee market?\n- Exploring the true cost of direct trade: Why transparency may not always align with economic viability.\nAUDIENCE CONTEXT: Coffee industry stakeholders, including roasters, traders, and ethical consumers, care about this issue due to the increasing volatility in coffee prices affecting sustainability, transparency, and profits across the supply chain.",
+  "selected_angles": [
+    {
+      "angle_text": "Direct trade's transparency claim falters in volatile markets, as price shocks leave boutique traders exposed, questioning long-term sustainability.",
+      "angle_type": "CONTRARIAN",
+      "hook_strength": 8,
+      "defensibility": 9,
+      "originality": 8,
+      "shareability": 8,
+      "thesis_fidelity": 8,
+      "total_score": 41,
+      "selected": true
+    }
+  ],
+  "fact_check_results": [
+    {
+      "claim_text": "direct trade praised as more ethical and transparent compared to traditional models",
+      "claim_type": "comparison",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "not_found",
+      "rag_confidence": 0.85,
+      "rag_evidence": "",
+      "web_status": "supported",
+      "web_evidence": "Both the direct trade and transparent trade models allow us to ensure quality and traceability in our supply chain, as well as support the communities where our products are produced. We believe that direct trade offers the best way to create sustainable, high-quality chocolate while supporting the livelihoods of farmers and producers... Direct trade coffee is different from conventional coffee sourcing because it removes the layers of export agents and brokers... This close working relationship"
+    },
+    {
+      "claim_text": "recent market volatility—including a record high International Coffee Organization's Composite Indicator Price of 354.32 US cents/lb in February 2025",
+      "claim_type": "statistic",
+      "verified": false,
+      "action": "remove",
+      "rag_status": "not_found",
+      "rag_confidence": 0.8,
+      "rag_evidence": "",
+      "web_status": "contradicted",
+      "web_evidence": "The ICO Composite Indicator Price (I-CIP) averaged 310.12 US cents/lb in January 2025, a 3.5% increase from December 2024."
+    },
+    {
+      "claim_text": "a 109% surge in Arabica futures prices",
+      "claim_type": "statistic",
+      "verified": false,
+      "action": "remove",
+      "rag_status": "not_found",
+      "rag_confidence": 0.9,
+      "rag_evidence": "",
+      "web_status": "contradicted",
+      "web_evidence": "Arabica futures climbed to $3.26 per pound, marking a 70% rise this year."
+    },
+    {
+      "claim_text": "environmental changes have heavily impacted coffee production in Ethiopia",
+      "claim_type": "causal",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "not_found",
+      "rag_confidence": 0.9,
+      "rag_evidence": "",
+      "web_status": "supported",
+      "web_evidence": "The impact of climate change on coffee production are multifaceted ranging from diminishing suitable land, increased prevalence of pests, reduced quality, and indirectly through biodiversity loss. Rising temperatures and erratic rainfall patterns affect coffee production."
+    },
+    {
+      "claim_text": "Nestlé's trading profit margin dropping by 130 basis points",
+      "claim_type": "statistic",
+      "verified": false,
+      "action": "remove",
+      "rag_status": "not_found",
+      "rag_confidence": 0.9,
+      "rag_evidence": "",
+      "web_status": "contradicted",
+      "web_evidence": "Nestlé has reported an underlying trading operating profit (UTOP) margin of 16.1% for 2025, a decrease of 110 basis points from the previous year."
+    },
+    {
+      "claim_text": "JDE Peet's absorbing €1.6 billion in cost inflation",
+      "claim_type": "statistic",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "not_found",
+      "rag_confidence": 0.9,
+      "rag_evidence": "",
+      "web_status": "supported",
+      "web_evidence": "Coupled with other cost inflation, this resulted in a total cost inflation of EUR 1.6 billion. To mitigate the impact of this unprecedented cost increase, the company continued to implement a range of measures, including productivity and efficiency initiatives, passing on cost increases to consumers only where unavoidable, while maintaining affordability."
+    },
+    {
+      "claim_text": "passing only 19.5% of this increase to consumers",
+      "claim_type": "statistic",
+      "verified": false,
+      "action": "remove",
+      "rag_status": "not_found",
+      "rag_confidence": 0.8,
+      "rag_evidence": "",
+      "web_status": "contradicted",
+      "web_evidence": "Source: JDE Peet’s raises coffee prices 64% in 18 months as global bean costs fall\nThe parent company of Douwe Egberts, JDE Peet’s, announced a fresh price hike of 10 percent to 25 percent for its coffee."
+    },
+    {
+      "claim_text": "airlines use futures to manage fuel costs",
+      "claim_type": "other",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "not_found",
+      "rag_confidence": 0.9,
+      "rag_evidence": "",
+      "web_status": "supported",
+      "web_evidence": "Futures contracts are another investment tool airlines can use to hedge their fuel expenses. 'They too are essentially agreements to buy / sell an asset at a future time.'"
+    },
+    {
+      "claim_text": "Recent surveys show consumers' willingness to pay a premium for ethically sourced goods",
+      "claim_type": "statistic",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "not_found",
+      "rag_confidence": 0.7,
+      "rag_evidence": "",
+      "web_status": "supported",
+      "web_evidence": "Consumers are willing to spend an average of 9.7% more on sustainably produced or sourced goods, even as cost-of-living and inflationary concerns weigh, according to PwC’s 2024 Voice of the Consumer Survey, published today."
+    }
+  ],
+  "voice_review": {
+    "style_profile": {
+      "avg_sentence_length": 29,
+      "sentence_length_variance": "high",
+      "vocabulary_level": "advanced",
+      "favorite_constructions": [
+        "<use of parenthetical remarks>",
+        "<colons for emphasis or lists>",
+        "<semi-colons for complex sentence structures>"
+      ],
+      "tone_markers": [
+        "analytical",
+        "speculative",
+        "critical"
+      ],
+      "paragraph_length": "long (5+)",
+      "opening_style": "Often starts with context-setting or a general statement about the topic.",
+      "closing_style": "Frequently ends with a reflective or summative statement, sometimes hinting at future implications.",
+      "punctuation_habits": [
+        "frequent use of dashes and parentheses",
+        "limited use of exclamation marks"
+      ],
+      "formality_level": 8,
+      "humor_frequency": "rare"
+    },
+    "voice_match_score": 1.0,
+    "adjustments_made": [
+      "broke several long sentences into shorter, punchier snippets for clarity",
+      "introduced more parenthetical comments to match author's style",
+      "used colons for emphasis where appropriate",
+      "incorporated more semi-colons for complex sentence structures",
+      "added em-dash asides in the opening",
+      "swapped 'utilize' for 'use' to simplify language",
+      "maintained formal tone throughout",
+      "removed web-like phrases such as 'delve' and 'navigate the landscape'",
+      "Removed repetitive phrases and consolidated similar concepts.",
+      "Shortened sections that overemphasized information or repeated points.",
+      "Eliminated excessive introductory remarks and focused on core content.",
+      "Reduced the verbosity in sections discussing transparency and global market impacts.",
+      "Condensed explanations of technological applications and strategic integrations.",
+      "Reverted to pre-voice draft to preserve >= 1200-word length (voice pass compressed it below the floor)."
+    ],
+    "char_count": 9238,
+    "word_count": 1243,
+    "length_ratio": 1.0,
+    "length_in_bounds": true,
+    "structurally_clean": true,
+    "residual_violations": [],
+    "length_fix_attempted": true,
+    "kept_claims_total": 3,
+    "kept_claims_preserved": 3,
+    "missing_kept_claims": [],
+    "restoration_attempted": false
+  },
+  "final_content": "# The Economics of Specialty Coffee Sourcing and Why Direct-Trade Margins Are Misunderstood\n\nSpecialty coffee sourcing has seen direct trade praised as more ethical and transparent compared to traditional models. Direct trade's appeal lies in its ability to establish direct relationships between roasters and farmers, promising better pricing and transparency. This theoretically benefits farmers and appeals to consumers interested in the ethics of their coffee sources. However, recent market volatility challenges the sustainability of this model. These fluctuations expose vulnerabilities in direct trade's core assumptions.\n\nPrice volatility poses distinct challenges for boutique green coffee traders who lack the resources to hedge against sudden shifts. These traders often find themselves exposed to turbulent markets. Differences in resources between small-scale and multinational traders raise doubts about whether direct trade can endure such economic fluctuations. This article explores the complexities of specialty coffee sourcing, highlighting misunderstandings about direct trade’s margins and the economic realities that challenge its sustainability.\n\n## The Allure of Transparency and Stability\n\nDirect trade promises increased transparency and price stability by eliminating intermediaries, allowing roasters and farmers to engage in beneficial transactions beyond the conventional commodity chain. This model seeks to stabilize prices by setting a fair pricing model reflecting real production costs, wages, and quality incentives, appealing to consumers and businesses focused on authentic, ethical sourcing.\n\nYet, global factors like climate change, pests, and geopolitical tensions often undermine these intentions, disproportionately affecting producers in coffee regions. Rising indexes and futures prices demonstrate the difficulty of maintaining stability. This situation questions the idea that local trading can be immune to broader economic forces, posing significant threats to small traders lacking financial resilience.\n\nFor example, environmental changes have heavily impacted coffee production in Ethiopia. As climate change affects rainfall patterns, coffee yields have become unpredictable, causing supply fluctuations and impacting prices. The promise of transparency and stability in direct trade cannot entirely buffer these uncontrollable variables, highlighting the approach's vulnerability to global challenges.\n\n## The Power Imbalance in the Coffee Industry\n\nLarge coffee corporations like Nestlé and JDE Peet's possess financial strength that allows them to absorb market shocks that destabilize smaller enterprises. Despite this, even major corporations face their own challenges. For instance, Nestlé has reported an underlying trading operating profit margin decrease, reflecting the strain of rising coffee and cocoa costs. These circumstances indicate that while large corporations have more resilience, smaller traders face significant disadvantages.\n\nSmaller traders cannot easily hedge against price hikes, leaving their operations at risk. When unable to absorb or pass on costs, smaller traders risk losing competitiveness, making it difficult to sustain ethical practices.\n\nFurthermore, access to financial protection against price fluctuations is limited for small traders. The complex nature of financial instruments and the lack of economies of scale hinder efforts that larger corporations navigate more easily. This disparity creates ongoing difficulties for smaller entities in volatile markets, challenging the sustainability of ethical practices.\n\n## Hedging Against Price Volatility\n\nThe capacity to hedge against price volatility differentiates larger corporations from smaller traders. Financial instruments like futures contracts offer a way to lock in prices and stabilize revenues. However, these tools are often inaccessible to many direct-trade entities due to their complexity and cost.\n\nThe boutique market's commitment to transparency often makes such financial strategies seem incompatible with their operations, leaving smaller traders exposed when market forces are unfavorable. This highlights a gap between their aspirations and financial strategies.\n\nIn other industries, hedging against price increases is a common practice. For instance, airlines use futures to manage fuel costs. Ideally, coffee traders could adopt similar strategies, but technical and financial barriers remain significant challenges. This underscores an industry-wide problem: those who would benefit most from financial stability tools often cannot access them.\n\n## Consumer Perceptions and Market Realities\n\nDespite these challenges, direct trade still resonates with consumers driven by ethical considerations. Offering traceability and connections to coffee's origins strengthens a brand's narrative, appealing to consumers seeking more than just a product—a story. Knowing a purchase directly benefits coffee farmers adds intrinsic value beyond the economic transaction.\n\nHowever, consumer preferences are constantly weighed against market realities. Even ethical consumers might hesitate to endure full price escalations required by a transparent supply chain. While companies can sometimes shield consumers from cost increases, smaller operations risk either compromising transparency or losing market share. This creates an irony: the qualities that make direct trade appealing also hinder its scalability and viability in a volatile market.\n\nRecent surveys show consumers' willingness to pay a premium for ethically sourced goods but hesitance to justify substantial price hikes. This gap between consumer aspirations and purchasing behavior questions whether the current market dynamics can sustain direct trade on a larger scale.\n\n## Future Sustainability of Direct Trade\n\nWhether direct trade can adapt to sustain itself amid price volatility is crucial. While its principles align with ethical consumption patterns, balancing ideals with a viable business strategy remains challenging. The model may need to adopt more sophisticated financial strategies or reevaluate pricing methods to better align with consumer expectations and market realities.\n\nComparing the strategies of large corporations with the limitations faced by smaller traders highlights a sustainability challenge for direct trade. As prices rise and margins tighten, direct trade's promises face trials requiring philosophical and operational evolution. Without adaptation, direct trade risks succumbing to the very volatility it seeks to counteract.\n\nDirect trade must integrate into global market mechanisms to thrive, building resilience against external pressures while retaining its transparency and farmer engagement ethos. This balance may define its future role in specialty coffee sourcing, bridging idealism with economic viability.\n\n## Strategic Integration and Global Market Mechanics\n\nFor direct trade to remain viable in a dynamic global market, its advocates need to draw on strategies used by larger entities. Joint ventures with well-capitalized firms could provide more robust financial strategies, sharing resources and expertise to give small traders better access to hedging tools and reducing risks from price volatility.\n\nAs global demand for coffee rises and ethical sourcing gains more attention, direct trade stakeholders might consider collaborations with technology partners to better manage market changes. Leveraging advanced data analytics and AI tools can provide insights into pricing and supply chain logistics, aligning operations with consumer and market expectations.\n\n## Embracing Technological Innovations\n\nTechnology offers unprecedented opportunities for direct trade. AI in supply chain management can enhance logistics, reduce waste, and improve efficiency. Collaborating with tech companies can provide the needed infrastructure for small traders to scale sustainably. Technology can also enhance consumer engagement, supporting real-time transparency and reinforcing the authenticity narrative that appeals to modern consumers.\n\nUsing blockchain for traceability could significantly transform how direct trade models operate. By allowing every transaction to be recorded and verified, blockchain can offer unmatched transparency, bolstering consumer trust. This technological integration would make the supply chain more robust and allow consumers to trace their coffee's origin, enhancing their purchasing experience.\n\nSuch innovations amplify direct trade’s impact by offering both economic resilience and ethical strength. This positions direct trade as a feasible alternative to traditional models, leading a path towards an economy valuing both ethical sourcing and profitability.\n\nExploring these modern solutions underscores the necessity for direct trade models to think beyond traditional practices. By embracing technological advancements and strategic partnerships, direct trade can not only sustain itself but thrive in an increasingly competitive and ethically-conscious marketplace. The future sustainability of direct trade will heavily depend on its ability to adapt and integrate advanced solutions while upholding its ethical foundations.",
+  "assessment": {
+    "structural": [
+      {
+        "check": "all_nodes_fired",
+        "pass": true,
+        "detail": "missing: none"
+      },
+      {
+        "check": "all_llm_nodes_have_tokens",
+        "pass": true,
+        "detail": "zero-token nodes: none"
+      },
+      {
+        "check": "final_non_empty",
+        "pass": true,
+        "detail": "9238 chars"
+      },
+      {
+        "check": "no_encoding_noise",
+        "pass": true,
+        "detail": "clean"
+      },
+      {
+        "check": "article_word_band",
+        "pass": true,
+        "detail": "1243 words (band 1200-3400)"
+      },
+      {
+        "check": "no_structural_violations",
+        "pass": true,
+        "detail": "0 violation(s)"
+      },
+      {
+        "check": "voice_length_in_bounds",
+        "pass": true,
+        "detail": "ratio 1.0, 9238 chars"
+      },
+      {
+        "check": "kept_claims_preserved",
+        "pass": true,
+        "detail": "0 missing"
+      }
+    ],
+    "slop": {
+      "slop_phrases": [],
+      "hedge_phrases": [],
+      "slop_count": 0,
+      "hedge_count": 0,
+      "clean": true
+    },
+    "judge": {
+      "insight_density": 6,
+      "originality": 5,
+      "hook_strength": 6,
+      "authentic_voice": 5,
+      "clarity": 7,
+      "overall": 6,
+      "one_line_verdict": "The article provides clear insights but lacks strong originality and an authentic voice, potentially blending into generic content."
+    }
+  }
+}

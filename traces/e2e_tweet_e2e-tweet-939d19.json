@@ -1,0 +1,280 @@
+{
+  "case": {
+    "name": "tweet",
+    "content_type": "tweet",
+    "user_topic": "Why most production AI agents fail on reliability, not capability",
+    "note": "RAG-hit (corpus deep on agents) + voice samples from corpus"
+  },
+  "run_id": "e2e-tweet-939d19",
+  "wall_ms": 45859,
+  "trace_summary": {
+    "total_duration_ms": 45850.61,
+    "total_tokens": 25639,
+    "total_llm_calls": 8
+  },
+  "traces": [
+    {
+      "node_name": "discovery",
+      "started_at": 1780036261.4164612,
+      "finished_at": 1780036273.6383696,
+      "duration_ms": 12221.91,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "TOPIC: Why most production AI agents fail on reliability, not capability\nCONTENT TYPE: tweet\nKEY FACTS:\n- 88% of AI projects never reach production due to inherent structural features of AI developmen...",
+      "prompt_tokens": 1904,
+      "completion_tokens": 305,
+      "total_tokens": 2209,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "retrieval",
+      "started_at": 1780036273.6424034,
+      "finished_at": 1780036276.0141685,
+      "duration_ms": 2371.77,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "['voice_samples', 'rag_context']",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "angle",
+      "started_at": 1780036276.0151653,
+      "finished_at": 1780036283.2731009,
+      "duration_ms": 7257.94,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "['all_angles', 'selected_angles', 'angle_strategy_note']",
+      "prompt_tokens": 4357,
+      "completion_tokens": 587,
+      "total_tokens": 4944,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "draft_writer",
+      "started_at": 1780036283.2740984,
+      "finished_at": 1780036285.741617,
+      "duration_ms": 2467.52,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "88% of AI projects never hit production not due to lack of capability, but due to reliability issues—think LLMs hallucinating in complex workflows. With incidents like Replit's 'Rogue Agent' in 2025, ...",
+      "prompt_tokens": 4455,
+      "completion_tokens": 59,
+      "total_tokens": 4514,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "critic",
+      "started_at": 1780036285.742613,
+      "finished_at": 1780036289.4321733,
+      "duration_ms": 3689.56,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "['critic_verdict', 'draft_passed', 'critic_feedback_history']",
+      "prompt_tokens": 773,
+      "completion_tokens": 341,
+      "total_tokens": 1114,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "draft_writer",
+      "started_at": 1780036289.4331722,
+      "finished_at": 1780036290.7410967,
+      "duration_ms": 1307.92,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "88% of AI projects fail to reach production due to reliability issues, not capability. With AI systems still struggling with errors and failures, isn't it time to push for higher reliability standards...",
+      "prompt_tokens": 4740,
+      "completion_tokens": 43,
+      "total_tokens": 4783,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "critic",
+      "started_at": 1780036290.7428014,
+      "finished_at": 1780036292.9817321,
+      "duration_ms": 2238.93,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "['critic_verdict', 'draft_passed', 'critic_feedback_history']",
+      "prompt_tokens": 757,
+      "completion_tokens": 276,
+      "total_tokens": 1033,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "fact_checker",
+      "started_at": 1780036292.9827225,
+      "finished_at": 1780036300.6870842,
+      "duration_ms": 7704.36,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "['fact_check_results', 'post_factcheck_draft']",
+      "prompt_tokens": 2325,
+      "completion_tokens": 238,
+      "total_tokens": 2563,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "voice_reviewer",
+      "started_at": 1780036300.6880908,
+      "finished_at": 1780036307.2670681,
+      "duration_ms": 6578.98,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "Many AI projects stall before deployment due to issues like data drift and schema changes. A lack of understanding of AI's limits also plays a role. As AI systems grapple with mistakes, is it time for...",
+      "prompt_tokens": 4107,
+      "completion_tokens": 372,
+      "total_tokens": 4479,
+      "error": null,
+      "metadata": {}
+    }
+  ],
+  "draft_iteration": 2,
+  "draft_passed": false,
+  "selected_topic_summary": "TOPIC: Why most production AI agents fail on reliability, not capability\nCONTENT TYPE: tweet\nKEY FACTS:\n- 88% of AI projects never reach production due to inherent structural features of AI development (source: Digital Applied).\n- Reliability issues such as guardrail failures have caused significant challenges, highlighted by incidents like the Replit 'Rogue Agent' of July 2025 (source: Arize).\n- Large LLMs like GPT models are prone to hallucinations, affecting reliability especially during multi-step AI-driven workflows (source: Alvarez & Marsal).\nTENSIONS:\n- While AI capabilities are advancing quickly, many argue that the focus should instead be on enhancing the reliability of these systems, leading to a debate on whether resources are being allocated appropriately.\nANGLE SEEDS:\n- The capability race in AI might be blinding us to a bigger issue: reliability is the Achilles' heel of production AI.\n- Before reaching for the stars with capability improvements, let's first make sure our AI isn't tripping on its own shoelaces with reliability issues.\nAUDIENCE CONTEXT: Tech leaders, AI developers, and business stakeholders are deeply invested in this topic as they are eager to scale AI within operations but face significant barriers due to reliability issues.",
+  "selected_angles": [
+    {
+      "angle_text": "88% of AI projects are never deployed not because they're incapable, but because their reliability fails to meet production demands.",
+      "angle_type": "DATA-DRIVEN",
+      "hook_strength": 8,
+      "defensibility": 9,
+      "originality": 7,
+      "shareability": 8,
+      "thesis_fidelity": 9,
+      "total_score": 41,
+      "selected": true
+    }
+  ],
+  "fact_check_results": [
+    {
+      "claim_text": "88% of AI projects fail to reach production due to reliability issues, not capability.",
+      "claim_type": "statistic",
+      "verified": false,
+      "action": "soften",
+      "rag_status": "not_found",
+      "rag_confidence": 0.8,
+      "rag_evidence": "",
+      "web_status": "unverifiable",
+      "web_evidence": "The sources mention issues related to data reliability, such as missing values, schema changes, and data drift, which can affect model reliability. However, they also mention other factors like insufficient understanding of AI capabilities, indicating that the failure of AI projects is not solely due to reliability issues."
+    }
+  ],
+  "voice_review": {
+    "style_profile": {
+      "avg_sentence_length": 20,
+      "sentence_length_variance": "high",
+      "vocabulary_level": "advanced",
+      "favorite_constructions": [
+        "hypothetical scenarios",
+        "comparative statements",
+        "quotes for emphasis"
+      ],
+      "tone_markers": [
+        "instructive",
+        "analytical",
+        "reflective"
+      ],
+      "paragraph_length": "long (5+)",
+      "opening_style": "contextual overview or hypothesis",
+      "closing_style": "summary of conclusions or unresolved questions",
+      "punctuation_habits": [
+        "use of quotes",
+        "colons for emphasis",
+        "parentheses for clarification"
+      ],
+      "formality_level": 8,
+      "humor_frequency": "rare"
+    },
+    "voice_match_score": 1.0,
+    "adjustments_made": [
+      "Shortened sentences to meet character limit",
+      "Rephrased 'push for higher reliability standards' to 'stricter reliability standards'",
+      "Eliminated question style and instead made it a reflective statement",
+      "Removed 'reliability' before 'issues'",
+      "Changed 'schema alterations' to 'schema changes'"
+    ],
+    "char_count": 271,
+    "word_count": 45,
+    "length_ratio": 0.663,
+    "length_in_bounds": true,
+    "structurally_clean": true,
+    "residual_violations": [],
+    "length_fix_attempted": true,
+    "kept_claims_total": 0,
+    "kept_claims_preserved": 0,
+    "missing_kept_claims": [],
+    "restoration_attempted": false
+  },
+  "final_content": "Many AI projects stall before deployment due to issues like data drift and schema changes. A lack of understanding of AI's limits also plays a role. As AI systems grapple with mistakes, is it time for stricter reliability standards to ensure they're ready for production?",
+  "assessment": {
+    "structural": [
+      {
+        "check": "all_nodes_fired",
+        "pass": true,
+        "detail": "missing: none"
+      },
+      {
+        "check": "all_llm_nodes_have_tokens",
+        "pass": true,
+        "detail": "zero-token nodes: none"
+      },
+      {
+        "check": "final_non_empty",
+        "pass": true,
+        "detail": "271 chars"
+      },
+      {
+        "check": "no_encoding_noise",
+        "pass": true,
+        "detail": "clean"
+      },
+      {
+        "check": "no_emoji",
+        "pass": true,
+        "detail": "none"
+      },
+      {
+        "check": "no_hashtags",
+        "pass": true,
+        "detail": "none"
+      },
+      {
+        "check": "within_280_chars",
+        "pass": true,
+        "detail": "271 chars (cap 280)"
+      },
+      {
+        "check": "no_structural_violations",
+        "pass": true,
+        "detail": "0 violation(s)"
+      },
+      {
+        "check": "voice_length_in_bounds",
+        "pass": true,
+        "detail": "ratio 0.663, 271 chars"
+      },
+      {
+        "check": "kept_claims_preserved",
+        "pass": true,
+        "detail": "0 missing"
+      }
+    ],
+    "slop": {
+      "slop_phrases": [],
+      "hedge_phrases": [],
+      "slop_count": 0,
+      "hedge_count": 0,
+      "clean": true
+    },
+    "judge": {
+      "insight_density": 5,
+      "originality": 4,
+      "hook_strength": 5,
+      "authentic_voice": 6,
+      "clarity": 7,
+      "overall": 5,
+      "one_line_verdict": "Clarity is strong, but lacks depth and originality in insight."
+    }
+  }
+}

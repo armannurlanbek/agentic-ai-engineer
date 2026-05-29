@@ -1,0 +1,272 @@
+{
+  "case": {
+    "name": "qrt",
+    "content_type": "quote_retweet",
+    "user_topic": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+    "original_tweet_text": "DeepSeek just dropped another open model that matches frontier closed models on most benchmarks. The moat was never the weights.",
+    "note": "QRT path — must add insight, not summarize the original"
+  },
+  "run_id": "e2e-qrt-c34250",
+  "wall_ms": 31281,
+  "trace_summary": {
+    "total_duration_ms": 31275.39,
+    "total_tokens": 21296,
+    "total_llm_calls": 8
+  },
+  "traces": [
+    {
+      "node_name": "discovery",
+      "started_at": 1780036308.2695513,
+      "finished_at": 1780036315.886554,
+      "duration_ms": 7617.0,
+      "input_summary": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+      "output_summary": "TOPIC: Open-weight models are closing on closed frontier faster than Western labs predicted\nCONTENT TYPE: quote_retweet\nKEY FACTS:\n- Open models averaged 89.6% of closed-model performance and often cl...",
+      "prompt_tokens": 1970,
+      "completion_tokens": 302,
+      "total_tokens": 2272,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "retrieval",
+      "started_at": 1780036315.8875515,
+      "finished_at": 1780036316.6658876,
+      "duration_ms": 778.34,
+      "input_summary": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+      "output_summary": "['voice_samples', 'rag_context']",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "angle",
+      "started_at": 1780036316.6668859,
+      "finished_at": 1780036323.0415146,
+      "duration_ms": 6374.63,
+      "input_summary": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+      "output_summary": "['all_angles', 'selected_angles', 'angle_strategy_note']",
+      "prompt_tokens": 3813,
+      "completion_tokens": 602,
+      "total_tokens": 4415,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "draft_writer",
+      "started_at": 1780036323.0425143,
+      "finished_at": 1780036325.0540802,
+      "duration_ms": 2011.57,
+      "input_summary": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+      "output_summary": "DeepSeek highlights an overlooked truth: open-weight models lean on the collective push from a decentralized AI community. As Llama 3 narrows the gap in mere months, it begs the question: Are propriet...",
+      "prompt_tokens": 1874,
+      "completion_tokens": 55,
+      "total_tokens": 1929,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "critic",
+      "started_at": 1780036325.0550754,
+      "finished_at": 1780036328.9020307,
+      "duration_ms": 3846.96,
+      "input_summary": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+      "output_summary": "['critic_verdict', 'draft_passed', 'critic_feedback_history']",
+      "prompt_tokens": 774,
+      "completion_tokens": 324,
+      "total_tokens": 1098,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "draft_writer",
+      "started_at": 1780036328.9040315,
+      "finished_at": 1780036330.2828755,
+      "duration_ms": 1378.84,
+      "input_summary": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+      "output_summary": "The rise of Llama 3 reveals open-weight models are not just competitive; they're racing ahead fast. Llama 3 reaches near-parity quickly—are proprietary labs behind, or have open models been underestim...",
+      "prompt_tokens": 4581,
+      "completion_tokens": 43,
+      "total_tokens": 4624,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "critic",
+      "started_at": 1780036330.2838726,
+      "finished_at": 1780036333.5569053,
+      "duration_ms": 3273.03,
+      "input_summary": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+      "output_summary": "['critic_verdict', 'draft_passed', 'critic_feedback_history']",
+      "prompt_tokens": 762,
+      "completion_tokens": 317,
+      "total_tokens": 1079,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "fact_checker",
+      "started_at": 1780036333.558909,
+      "finished_at": 1780036334.1574414,
+      "duration_ms": 598.53,
+      "input_summary": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+      "output_summary": "['fact_check_results', 'post_factcheck_draft']",
+      "prompt_tokens": 261,
+      "completion_tokens": 1,
+      "total_tokens": 262,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "voice_reviewer",
+      "started_at": 1780036334.1594393,
+      "finished_at": 1780036339.5449371,
+      "duration_ms": 5385.5,
+      "input_summary": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+      "output_summary": "Llama 3's ascent illustrates that open-weight models are not simply competitive; they're rapidly advancing. With Llama 3 nearing parity, one wonders: are proprietary labs lagging, or is it that open m...",
+      "prompt_tokens": 5271,
+      "completion_tokens": 346,
+      "total_tokens": 5617,
+      "error": null,
+      "metadata": {}
+    }
+  ],
+  "draft_iteration": 2,
+  "draft_passed": false,
+  "selected_topic_summary": "TOPIC: Open-weight models are closing on closed frontier faster than Western labs predicted\nCONTENT TYPE: quote_retweet\nKEY FACTS:\n- Open models averaged 89.6% of closed-model performance and often close the gap within 13 weeks of a closed model's release. (source: mitsloan.mit.edu)\n- Llama 3 has closed the gap between open and closed models, proving competitive in benchmarks. (source: epoch.ai)\n- Open-weight models lag state-of-the-art by around 3 months on average, but are improving rapidly. (source: epoch.ai)\nTENSIONS:\n- Open-weight models are closing the performance gap rapidly, but closed models still lead in deep reasoning and consistency, creating debate on their true competitiveness. (source: YouTube - Open-Weight vs Closed AI Models)\nANGLE SEEDS:\n- What if the closed model gatekeepers underestimated the innovation speed of the open AI community?\n- Is this the beginning of the end for the moat that closed models supposedly had over open weights?\nAUDIENCE CONTEXT: Tech enthusiasts, AI researchers, and industry professionals are interested in this topic due to its implications on AI development strategies and competitive dynamics in artificial intelligence advancements.",
+  "selected_angles": [
+    {
+      "angle_text": "Llama 3's rise against closed models underscores how swiftly open weights can achieve benchmark parity against proprietary models.",
+      "angle_type": "DATA-DRIVEN",
+      "hook_strength": 8,
+      "defensibility": 9,
+      "originality": 6,
+      "shareability": 8,
+      "thesis_fidelity": 9,
+      "total_score": 40,
+      "selected": true
+    }
+  ],
+  "fact_check_results": [],
+  "voice_review": {
+    "style_profile": {
+      "avg_sentence_length": 20,
+      "sentence_length_variance": "medium",
+      "vocabulary_level": "advanced",
+      "favorite_constructions": [
+        "listing multiple examples",
+        "parenthetical remarks",
+        "comparisons between past and present trends"
+      ],
+      "tone_markers": [
+        "analytical",
+        "predictive",
+        "enthusiastic"
+      ],
+      "paragraph_length": "long (5+)",
+      "opening_style": "Directly introduces the topic or trend being analyzed",
+      "closing_style": "Summarizes findings or shares predictions for the future",
+      "punctuation_habits": [
+        "frequent use of colons and semicolons",
+        "occasional use of ellipses for emphasis"
+      ],
+      "formality_level": 8,
+      "humor_frequency": "rare"
+    },
+    "voice_match_score": 1.0,
+    "adjustments_made": [
+      "Rephrased 'the rise of Llama 3 reveals' to 'Llama 3's ascent illustrates' for a sophisticated tone",
+      "Changed 'racing ahead fast' to 'rapidly advancing' to fit vocabulary level",
+      "Altered 'reaches near-parity quickly—are proprietary labs behind' to 'nearing parity, one wonders: are proprietary labs lagging' for better flow and punctuation style",
+      "Removed question about potential underestimation for formality"
+    ],
+    "char_count": 231,
+    "word_count": 34,
+    "length_ratio": 1.127,
+    "length_in_bounds": true,
+    "structurally_clean": true,
+    "residual_violations": [],
+    "length_fix_attempted": false,
+    "kept_claims_total": 0,
+    "kept_claims_preserved": 0,
+    "missing_kept_claims": [],
+    "restoration_attempted": false
+  },
+  "final_content": "Llama 3's ascent illustrates that open-weight models are not simply competitive; they're rapidly advancing. With Llama 3 nearing parity, one wonders: are proprietary labs lagging, or is it that open models have been underestimated?",
+  "assessment": {
+    "structural": [
+      {
+        "check": "all_nodes_fired",
+        "pass": true,
+        "detail": "missing: none"
+      },
+      {
+        "check": "all_llm_nodes_have_tokens",
+        "pass": true,
+        "detail": "zero-token nodes: none"
+      },
+      {
+        "check": "final_non_empty",
+        "pass": true,
+        "detail": "231 chars"
+      },
+      {
+        "check": "no_encoding_noise",
+        "pass": true,
+        "detail": "clean"
+      },
+      {
+        "check": "no_emoji",
+        "pass": true,
+        "detail": "none"
+      },
+      {
+        "check": "no_hashtags",
+        "pass": true,
+        "detail": "none"
+      },
+      {
+        "check": "within_280_chars",
+        "pass": true,
+        "detail": "231 chars (cap 280)"
+      },
+      {
+        "check": "qrt_not_echo",
+        "pass": true,
+        "detail": "word overlap 0.16"
+      },
+      {
+        "check": "no_structural_violations",
+        "pass": true,
+        "detail": "0 violation(s)"
+      },
+      {
+        "check": "voice_length_in_bounds",
+        "pass": true,
+        "detail": "ratio 1.127, 231 chars"
+      },
+      {
+        "check": "kept_claims_preserved",
+        "pass": true,
+        "detail": "0 missing"
+      }
+    ],
+    "slop": {
+      "slop_phrases": [],
+      "hedge_phrases": [],
+      "slop_count": 0,
+      "hedge_count": 0,
+      "clean": true
+    },
+    "judge": {
+      "insight_density": 6,
+      "originality": 5,
+      "hook_strength": 7,
+      "authentic_voice": 4,
+      "clarity": 8,
+      "overall": 6,
+      "one_line_verdict": "Clarity is strong, but the voice lacks authenticity and originality."
+    }
+  }
+}
