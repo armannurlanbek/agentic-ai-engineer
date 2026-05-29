@@ -70,3 +70,6 @@ class HealthResponse(BaseModel):
     status: str
     chroma: bool
     openai: bool
+    chroma_path: Optional[str] = None
+    chroma_error: Optional[str] = None
+    collections: Optional[dict] = None

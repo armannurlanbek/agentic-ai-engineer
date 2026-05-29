@@ -10,7 +10,9 @@ uvicorn[standard]>=0.32.0
 python-multipart>=0.0.18
 
 # RAG / Vector Store
-chromadb>=0.6.0
+# Pinned to the exact version that wrote data/chroma_db/ — the persistence format
+# is version-sensitive, so a newer chromadb on the server can fail to read it.
+chromadb==1.5.9
 
 # Search & Discovery
 tavily-python>=0.5.0
