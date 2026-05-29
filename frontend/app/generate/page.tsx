@@ -10,7 +10,6 @@ import { Copy, Check, Loader2 } from "lucide-react";
 import { startGeneration, getRunStatus, getRunResult, type RunStatus, type RunResult } from "@/lib/api";
 
 const CONTENT_TYPES = [
-  { value: "tweet", label: "Tweet" },
   { value: "quote_retweet", label: "Quote RT" },
   { value: "thread", label: "Thread" },
   { value: "essay", label: "Essay" },
@@ -32,7 +31,7 @@ const AGENT_LABELS: Record<string, string> = {
 
 export default function GeneratePage() {
   const [topic, setTopic] = useState("");
-  const [contentType, setContentType] = useState("tweet");
+  const [contentType, setContentType] = useState("thread");
   const [targetLength, setTargetLength] = useState("medium");
   const [originalTweet, setOriginalTweet] = useState("");
   const [voiceDesc, setVoiceDesc] = useState("");
