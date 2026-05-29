@@ -13,7 +13,9 @@ app = FastAPI(
 # CORS origins are env-configurable (ALLOWED_ORIGINS, comma-separated). Default "*"
 # so the deployed frontend works immediately; credentials are only enabled when
 # explicit origins are set (browsers reject credentials with a wildcard origin).
-_origins = [o.strip() for o in settings.allowed_origins.split(",") if o.strip()] or ["*"]
+# Strip any trailing slash: browsers send Origin with no trailing slash/path, and
+# CORS matching is an exact string compare — "https://x.app/" would silently fail.
+_origins = [o.strip().rstrip("/") for o in settings.allowed_origins.split(",") if o.strip()] or ["*"]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=_origins,
