@@ -1,0 +1,287 @@
+{
+  "case": {
+    "name": "qrt",
+    "content_type": "quote_retweet",
+    "user_topic": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+    "original_tweet_text": "DeepSeek just dropped another open model that matches frontier closed models on most benchmarks. The moat was never the weights.",
+    "note": "QRT path — must add insight, not summarize the original"
+  },
+  "run_id": "e2e-qrt-99188e",
+  "wall_ms": 43958,
+  "trace_summary": {
+    "total_duration_ms": 43952.58,
+    "total_tokens": 25891,
+    "total_llm_calls": 8
+  },
+  "traces": [
+    {
+      "node_name": "discovery",
+      "started_at": 1780029543.096595,
+      "finished_at": 1780029556.0550866,
+      "duration_ms": 12958.49,
+      "input_summary": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+      "output_summary": "TOPIC: Open-weight models are closing on closed frontier faster than Western labs predicted\nCONTENT TYPE: quote_retweet\nKEY FACTS:\n- By February 2025, the performance gap between leading open-weight a...",
+      "prompt_tokens": 2127,
+      "completion_tokens": 370,
+      "total_tokens": 2497,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "retrieval",
+      "started_at": 1780029556.0560946,
+      "finished_at": 1780029558.096579,
+      "duration_ms": 2040.48,
+      "input_summary": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+      "output_summary": "['voice_samples', 'rag_context']",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "angle",
+      "started_at": 1780029558.098575,
+      "finished_at": 1780029564.50143,
+      "duration_ms": 6402.85,
+      "input_summary": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+      "output_summary": "['all_angles', 'selected_angles', 'angle_strategy_note']",
+      "prompt_tokens": 3765,
+      "completion_tokens": 602,
+      "total_tokens": 4367,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "draft_writer",
+      "started_at": 1780029564.50143,
+      "finished_at": 1780029566.3128438,
+      "duration_ms": 1811.41,
+      "input_summary": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+      "output_summary": "The real disruption isn't just in performance but in accessibility and creativity. Open-weight models like DeepSeek-R1 empower everyone to build and innovate, not just wait for breakthroughs from a se...",
+      "prompt_tokens": 1784,
+      "completion_tokens": 50,
+      "total_tokens": 1834,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "critic",
+      "started_at": 1780029566.3138568,
+      "finished_at": 1780029568.9429455,
+      "duration_ms": 2629.09,
+      "input_summary": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+      "output_summary": "['critic_verdict', 'draft_passed', 'critic_feedback_history']",
+      "prompt_tokens": 699,
+      "completion_tokens": 322,
+      "total_tokens": 1021,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "draft_writer",
+      "started_at": 1780029568.9439478,
+      "finished_at": 1780029570.6285427,
+      "duration_ms": 1684.59,
+      "input_summary": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+      "output_summary": "DeepSeek-R1's release, with just a 2% performance gap to o3-mini, showcases how open-weight models are leveling the playing field. Beyond performance, this narrowing gap of 1.70% brings unprecedented ...",
+      "prompt_tokens": 4418,
+      "completion_tokens": 73,
+      "total_tokens": 4491,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "critic",
+      "started_at": 1780029570.6285427,
+      "finished_at": 1780029574.2088783,
+      "duration_ms": 3580.34,
+      "input_summary": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+      "output_summary": "['critic_verdict', 'draft_passed', 'critic_feedback_history']",
+      "prompt_tokens": 722,
+      "completion_tokens": 423,
+      "total_tokens": 1145,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "fact_checker",
+      "started_at": 1780029574.2098846,
+      "finished_at": 1780029582.9614046,
+      "duration_ms": 8751.52,
+      "input_summary": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+      "output_summary": "['fact_check_results', 'post_factcheck_draft']",
+      "prompt_tokens": 4588,
+      "completion_tokens": 366,
+      "total_tokens": 4954,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "voice_reviewer",
+      "started_at": 1780029582.962418,
+      "finished_at": 1780029587.049172,
+      "duration_ms": 4086.75,
+      "input_summary": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+      "output_summary": "Dear reader, today we stand at a pivotal moment in the journey of AI. Reports indicate that the estimated narrowing gap presents not just a competitive race, but instead unveils unprecedented opportun...",
+      "prompt_tokens": 5179,
+      "completion_tokens": 403,
+      "total_tokens": 5582,
+      "error": null,
+      "metadata": {}
+    }
+  ],
+  "draft_iteration": 2,
+  "draft_passed": false,
+  "selected_topic_summary": "TOPIC: Open-weight models are closing on closed frontier faster than Western labs predicted\nCONTENT TYPE: quote_retweet\nKEY FACTS:\n- By February 2025, the performance gap between leading open-weight and closed-weight models narrowed to just 1.70% on the Chatbot Arena Leaderboard. (source: Stanford HAI's 2025 AI Index Report)\n- DeepSeek-R1, released in January 2025, has decreased its performance gap to only 2 percentage points behind the top-performing closed-weight model, o3-mini, on MATH Level 5 benchmarks. (source: Epoch AI)\n- VentureBeat predicted in 2024 that open-source models would catch up with closed-source ones, and by early 2025, this prediction is increasingly coming true. (source: ACLU)\nTENSIONS:\n- While some experts see open-weight models rapidly closing the gap, others argue that they still lag behind on critical benchmarks where proprietary innovation reigns. (source: MIT Sloan and Epoch AI)\nANGLE SEEDS:\n- The rapid convergence between open and closed AI models defies the narrative of indefinite proprietary dominance; are traditional labs underestimating open innovation?\n- If open-weight models can match or nearly match frontier closed models, the future of AI could be as much about open collaboration as proprietary secrecy.\nAUDIENCE CONTEXT: AI researchers, developers, and industry analysts are closely tracking the performance race between open and closed models, as it informs future innovation, investment decisions, and the balance of power in AI development.",
+  "selected_angles": [
+    {
+      "angle_text": "Open-weight models narrowing the gap weren't illusions as DeepSeek-R1 outpaces Western labs' five-year predictions.",
+      "angle_type": "CONTRARIAN",
+      "hook_strength": 7,
+      "defensibility": 9,
+      "originality": 8,
+      "shareability": 7,
+      "thesis_fidelity": 9,
+      "total_score": 40,
+      "selected": true
+    }
+  ],
+  "fact_check_results": [
+    {
+      "claim_text": "DeepSeek-R1's release, with just a 2% performance gap to o3-mini",
+      "claim_type": "comparison",
+      "verified": false,
+      "action": "remove",
+      "rag_status": "not_found",
+      "rag_confidence": 0.8,
+      "rag_evidence": "",
+      "web_status": "contradicted",
+      "web_evidence": "The o3-mini model has a higher accuracy of 13.0%, outperforming the DeepSeek-R1, which has an accuracy of 9.4%."
+    },
+    {
+      "claim_text": "this narrowing gap of 1.70% brings unprecedented opportunities in creativity and innovation",
+      "claim_type": "causal",
+      "verified": false,
+      "action": "soften",
+      "rag_status": "not_found",
+      "rag_confidence": 0.8,
+      "rag_evidence": "",
+      "web_status": "unverifiable",
+      "web_evidence": "None of the search results directly address the claim about a 'narrowing gap of 1.70%' and its impact on creativity and innovation. The search results discuss topics like performance marketing, skills gap, and the relationship between creativity and innovation but do not provide information specifically related to the claimed percentage."
+    }
+  ],
+  "voice_review": {
+    "style_profile": {
+      "avg_sentence_length": 20,
+      "sentence_length_variance": "high",
+      "vocabulary_level": "advanced",
+      "favorite_constructions": [
+        "direct address to the reader",
+        "comparative structure",
+        "historical context before prediction"
+      ],
+      "tone_markers": [
+        "analytical",
+        "informative",
+        "speculative"
+      ],
+      "paragraph_length": "long (5+)",
+      "opening_style": "Directly addressing a topic or acknowledging the complexity of the subject.",
+      "closing_style": "Summarizing insights, acknowledging trends, or speculating future developments.",
+      "punctuation_habits": [
+        "frequent use of dashes for asides",
+        "parentheses for additional information"
+      ],
+      "formality_level": 8,
+      "humor_frequency": "occasional"
+    },
+    "voice_match_score": 0.7,
+    "adjustments_made": [
+      "Added a direct address to the reader to engage them from the start.",
+      "Rearranged the sentence sequence to build a sense of historical progress before making a prediction.",
+      "Inserted an em-dash aside to emphasize the transformative nature of democratization.",
+      "Added parentheses for additional commentary on Open Innovation.",
+      "Changed 'signaling' to 'suggesting' for varied vocabulary.",
+      "Closed with speculative insight on the future democratization of AI."
+    ],
+    "length_ratio": 2.378,
+    "length_in_bounds": false,
+    "kept_claims_total": 0,
+    "kept_claims_preserved": 0,
+    "missing_kept_claims": [],
+    "restoration_attempted": false
+  },
+  "final_content": "Dear reader, today we stand at a pivotal moment in the journey of AI. Reports indicate that the estimated narrowing gap presents not just a competitive race, but instead unveils unprecedented opportunities for creativity and innovation. These shifts signal a profound movement toward more democratized AI advancements—suggesting that the race, far from merely narrowing, is actually democratizing. (An exciting era of Open Innovation seems to be upon us.) This trend opens up new paths for those eager to engage with AI in novel ways, reshaping the landscape in unexpected, egalitarian directions.",
+  "assessment": {
+    "structural": [
+      {
+        "check": "all_nodes_fired",
+        "pass": true,
+        "detail": "missing: none"
+      },
+      {
+        "check": "all_llm_nodes_have_tokens",
+        "pass": true,
+        "detail": "zero-token nodes: none"
+      },
+      {
+        "check": "final_non_empty",
+        "pass": true,
+        "detail": "597 chars"
+      },
+      {
+        "check": "no_encoding_noise",
+        "pass": true,
+        "detail": "clean"
+      },
+      {
+        "check": "no_emoji",
+        "pass": true,
+        "detail": "none"
+      },
+      {
+        "check": "no_hashtags",
+        "pass": true,
+        "detail": "none"
+      },
+      {
+        "check": "within_280_chars",
+        "pass": false,
+        "detail": "597 chars"
+      },
+      {
+        "check": "qrt_not_echo",
+        "pass": true,
+        "detail": "word overlap 0.21"
+      },
+      {
+        "check": "voice_length_in_bounds",
+        "pass": false,
+        "detail": "ratio 2.378"
+      },
+      {
+        "check": "kept_claims_preserved",
+        "pass": true,
+        "detail": "0 missing"
+      }
+    ],
+    "slop": {
+      "slop_phrases": [],
+      "hedge_phrases": [],
+      "slop_count": 0,
+      "hedge_count": 0,
+      "clean": true
+    },
+    "judge": {
+      "insight_density": 5,
+      "originality": 4,
+      "hook_strength": 5,
+      "authentic_voice": 3,
+      "clarity": 6,
+      "overall": 4,
+      "one_line_verdict": "Clarity is decent but lacks originality and a strong, authentic voice."
+    }
+  }
+}

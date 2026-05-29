@@ -1,0 +1,296 @@
+{
+  "case": {
+    "name": "essay",
+    "content_type": "essay",
+    "user_topic": "Frontier AI labs in 2026 are diverging on what they optimize for, not converging on capability",
+    "note": "RAG-hit, long-form argument structure"
+  },
+  "run_id": "e2e-essay-e74a66",
+  "wall_ms": 89153,
+  "trace_summary": {
+    "total_duration_ms": 89149.77,
+    "total_tokens": 40706,
+    "total_llm_calls": 8
+  },
+  "traces": [
+    {
+      "node_name": "discovery",
+      "started_at": 1780029608.0787208,
+      "finished_at": 1780029626.7411506,
+      "duration_ms": 18662.43,
+      "input_summary": "Frontier AI labs in 2026 are diverging on what they optimize for, not converging on capability",
+      "output_summary": "TOPIC: Frontier AI labs in 2026 are diverging on what they optimize for, not converging on capability\nCONTENT TYPE: essay\nKEY FACTS:\n- DeepMind is estimated to use slightly under half of Google’s tota...",
+      "prompt_tokens": 2003,
+      "completion_tokens": 510,
+      "total_tokens": 2513,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "retrieval",
+      "started_at": 1780029626.74415,
+      "finished_at": 1780029627.7707279,
+      "duration_ms": 1026.58,
+      "input_summary": "Frontier AI labs in 2026 are diverging on what they optimize for, not converging on capability",
+      "output_summary": "['voice_samples', 'rag_context']",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "angle",
+      "started_at": 1780029627.7717226,
+      "finished_at": 1780029637.5561645,
+      "duration_ms": 9784.44,
+      "input_summary": "Frontier AI labs in 2026 are diverging on what they optimize for, not converging on capability",
+      "output_summary": "['all_angles', 'selected_angles', 'angle_strategy_note']",
+      "prompt_tokens": 4121,
+      "completion_tokens": 928,
+      "total_tokens": 5049,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "draft_writer",
+      "started_at": 1780029637.5581605,
+      "finished_at": 1780029652.3393254,
+      "duration_ms": 14781.16,
+      "input_summary": "Frontier AI labs in 2026 are diverging on what they optimize for, not converging on capability",
+      "output_summary": "In 2026, the landscape of Artificial Intelligence labs presents a striking divergence in their strategic trajectories, emphasizing an often-overlooked aspect: hardware customization’s influential role...",
+      "prompt_tokens": 4521,
+      "completion_tokens": 914,
+      "total_tokens": 5435,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "critic",
+      "started_at": 1780029652.3393254,
+      "finished_at": 1780029655.589783,
+      "duration_ms": 3250.46,
+      "input_summary": "Frontier AI labs in 2026 are diverging on what they optimize for, not converging on capability",
+      "output_summary": "['critic_verdict', 'draft_passed', 'critic_feedback_history']",
+      "prompt_tokens": 1593,
+      "completion_tokens": 366,
+      "total_tokens": 1959,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "draft_writer",
+      "started_at": 1780029655.5907817,
+      "finished_at": 1780029662.7429311,
+      "duration_ms": 7152.15,
+      "input_summary": "Frontier AI labs in 2026 are diverging on what they optimize for, not converging on capability",
+      "output_summary": "In 2026, the landscape of Artificial Intelligence labs is marked by a transformative question: Is the future of AI defined solely by compute power, or is there a subtler game at play? This question un...",
+      "prompt_tokens": 5482,
+      "completion_tokens": 761,
+      "total_tokens": 6243,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "critic",
+      "started_at": 1780029662.7434585,
+      "finished_at": 1780029666.8725345,
+      "duration_ms": 4129.08,
+      "input_summary": "Frontier AI labs in 2026 are diverging on what they optimize for, not converging on capability",
+      "output_summary": "['critic_verdict', 'draft_passed', 'critic_feedback_history']",
+      "prompt_tokens": 1440,
+      "completion_tokens": 391,
+      "total_tokens": 1831,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "fact_checker",
+      "started_at": 1780029666.8735266,
+      "finished_at": 1780029685.1707902,
+      "duration_ms": 18297.26,
+      "input_summary": "Frontier AI labs in 2026 are diverging on what they optimize for, not converging on capability",
+      "output_summary": "['fact_check_results', 'post_factcheck_draft']",
+      "prompt_tokens": 9107,
+      "completion_tokens": 1307,
+      "total_tokens": 10414,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "voice_reviewer",
+      "started_at": 1780029685.1707902,
+      "finished_at": 1780029697.2284946,
+      "duration_ms": 12057.7,
+      "input_summary": "Frontier AI labs in 2026 are diverging on what they optimize for, not converging on capability",
+      "output_summary": "In 2026, the terrain of Artificial Intelligence labs is captivated by a pivotal question: Is the horizon of AI confined to the bounds of computational power, or is there a nuanced strategy unfolding b...",
+      "prompt_tokens": 6196,
+      "completion_tokens": 1066,
+      "total_tokens": 7262,
+      "error": null,
+      "metadata": {}
+    }
+  ],
+  "draft_iteration": 2,
+  "draft_passed": false,
+  "selected_topic_summary": "TOPIC: Frontier AI labs in 2026 are diverging on what they optimize for, not converging on capability\nCONTENT TYPE: essay\nKEY FACTS:\n- DeepMind is estimated to use slightly under half of Google’s total compute resources. (source: epochai.substack.com)\n- Meta plans to rent external cloud compute starting in late 2025. (source: frontier-labs-dont-use-most-ai-compute)\n- A global estimate suggests a world total of 16 million H100e chips are in operation. (source: epochai.substack.com)\n- Frontier AI labs aim to create value at different layers of the stack, from hardware to consumer applications. (source: eastwind.substack.com)\n- Some frontier AI labs rely on custom hardware to optimize cost and performance. (source: eastwind.substack.com)\n- AI's influence continues to dominate across the economy, affecting investment considerations. (source: morganstanley.com)\nTENSIONS:\n- Disagreement over the best strategy for AI labs: optimizing compute versus hardware customization. (source: epochai.substack.com and eastwind.substack.com)\n- Debate on whether AI advancements will lead to new market incumbents surpassing current giants like those valued at $2-3 trillion. (source: eastwind.substack.com)\n- Competing views on AI investment strategies, with some seeking the next big breakthrough while others predict market contraction. (source: investinginai.substack.com)\nANGLE SEEDS:\n- Frontier AI labs are reshaping the tech landscape by prioritizing different optimization strategies.\n- The divergence in AI lab priorities mirrors the broader fragmentation seen in technology leadership.\n- The future market position of AI labs may depend more on strategic optimization choices than on raw compute power.\n- Frontier AI labs' differing focus areas could redefine their roles and market influence by 2026.\nAUDIENCE CONTEXT: Technology investors and stakeholders are keenly interested in the strategic directions different AI labs take, as these will significantly impact market dynamics and investment opportunities in the AI sector.",
+  "selected_angles": [
+    {
+      "angle_text": "Contrary to popular belief, optimizing compute isn’t the only path; hardware customization is equally shaping AI labs by 2026.",
+      "angle_type": "CONTRARIAN",
+      "hook_strength": 8,
+      "defensibility": 8,
+      "originality": 7,
+      "shareability": 7,
+      "thesis_fidelity": 9,
+      "total_score": 39,
+      "selected": true
+    }
+  ],
+  "fact_check_results": [
+    {
+      "claim_text": "In 2026, the landscape of Artificial Intelligence labs is marked by a transformative question",
+      "claim_type": "event",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "supported",
+      "rag_confidence": 0.8,
+      "rag_evidence": "we tie together a few quotes as all model labs become agent labs... The product surface is moving up-stack",
+      "web_status": "unverifiable",
+      "web_evidence": ""
+    },
+    {
+      "claim_text": "DeepMind, which reportedly utilizes slightly under half of Google's computational assets",
+      "claim_type": "attribution",
+      "verified": false,
+      "action": "soften",
+      "rag_status": "not_found",
+      "rag_confidence": 0.75,
+      "rag_evidence": "",
+      "web_status": "unverifiable",
+      "web_evidence": "The search results do not provide specific information about the proportion of Google's computational assets utilized by DeepMind."
+    },
+    {
+      "claim_text": "global deployment of approximately 16 million H100e chips supports this narrative",
+      "claim_type": "statistic",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "not_found",
+      "rag_confidence": 0.8,
+      "rag_evidence": "",
+      "web_status": "supported",
+      "web_evidence": "If there’s a one-quarter lag between delivery and deployment, deployed compute at the end of 2025 would be comparable to sold compute as of Q3 2025, which was ~16 million H100e."
+    },
+    {
+      "claim_text": "Meta's tactic of utilizing external cloud compute starting in late 2025",
+      "claim_type": "event",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "not_found",
+      "rag_confidence": 0.75,
+      "rag_evidence": "",
+      "web_status": "supported",
+      "web_evidence": "Meta's $75B AI Infrastructure Bet: Inside the Biggest Cloud Deals of 2025 - DEV Community confirms Meta's engagement with CoreWeave's infrastructure and Oracle Cloud Computing in 2025. Additionally, Meta and Google Cloud signing a $10 billion partnership indicates external cloud compute utilization."
+    }
+  ],
+  "voice_review": {
+    "style_profile": {
+      "avg_sentence_length": 20,
+      "sentence_length_variance": "high",
+      "vocabulary_level": "advanced",
+      "favorite_constructions": [
+        "use of ellipses",
+        "colons",
+        "parenthetical remarks"
+      ],
+      "tone_markers": [
+        "analytical",
+        "speculative",
+        "informative"
+      ],
+      "paragraph_length": "long (5+)",
+      "opening_style": "Direct question or statement",
+      "closing_style": "Speculative or predictive statement",
+      "punctuation_habits": [
+        "frequent use of commas",
+        "ellipses",
+        "colons"
+      ],
+      "formality_level": 7,
+      "humor_frequency": "rare"
+    },
+    "voice_match_score": 1.0,
+    "adjustments_made": [
+      "Rephrased opening question for clarity and directness.",
+      "Added an em-dash aside in the third paragraph to emphasize strategic deviation.",
+      "Reconstructed sentences to balance sentence length and enhance rhythm.",
+      "Introduced colons and ellipses to align with the author's favorite constructions.",
+      "Switched 'utilize' to 'leverage' for variety and precision.",
+      "Increased paragraph count to enhance readability, aligning with author's style."
+    ],
+    "length_ratio": 1.001,
+    "length_in_bounds": true,
+    "kept_claims_total": 3,
+    "kept_claims_preserved": 3,
+    "missing_kept_claims": [],
+    "restoration_attempted": false
+  },
+  "final_content": "In 2026, the terrain of Artificial Intelligence labs is captivated by a pivotal question: Is the horizon of AI confined to the bounds of computational power, or is there a nuanced strategy unfolding beneath the surface? This query highlights a significant shift in strategies, as labs increasingly embrace hardware customization as a cornerstone of their toolbox. Steering away from a singular focus on computational prowess, leading AI labs are now following diverse paths, refining different layers of the system stack to forge a sophisticated frontier in AI development. \n\nHistorically, the conviction that upping compute resources alone fuels AI advancement has dominated discussions and investments. This compute-centric attitude is embodied by DeepMind, purportedly tapping into a significant share of Google's computing assets. Concurrently, the global rollout of about 16 million H100e chips bolsters this belief. Yet, recent trends signify a transformative shift: computational power remains crucial, but it is no longer the sole bastion of innovation and progress. \n\nAn emerging faction of cutting-edge AI labs is redefining their focus, making hardware customization a strategic pillar. These labs are unlocking the promise of custom-tailored hardware solutions to achieve notable performance boosts, carving out distinct advantages across different facets of AI's complex ecosystem. This approach is not merely an addition to compute capability; it's a strategic deviation that underscores AI's technological progression.\n\nConsider Meta's maneuver to leverage external cloud compute from late 2025 onward. This tactic marks a broader realization of the potential that hardware customization holds for advancing specialization and flexibility. When contrasted with DeepMind's heavily compute-reliant strategy, it becomes apparent that AI innovation is anything but homogenous. AI labs are pioneering new avenues, experimenting with custom hardware configurations that provide competitive edges in efficiency and adaptability.\n\nThe debate between hardware customization and compute optimization continues. Some detractors argue that compute capacity will eventually define AI dominance, predicting a consolidation of power among today's tech behemoths. However, this perspective may underestimate the adaptability and targeted performance improvements that custom hardware solutions can deliver. Increasingly, AI labs are tweaking their strategies to focus on distinct capabilities rather than simply ramping up computational horsepower. By investing in bespoke hardware, they circumvent traditional hurdles and seize emerging market opportunities with nimbleness.\n\nEngaging with this discourse entails acknowledging differing perspectives, which suggest that increasing complexity in AI might necessitate compute resources so vast that hardware customization seems implausible. Developing and deploying robust hardware solutions involves challenges—cost, integration, and scalability—that proponents of compute optimization frequently highlight.\n\nNonetheless, the pivot toward integrating interfaces and hardware investments reflects a wider acknowledgment of value-creation opportunities. Capital is increasingly being funneled into initiatives focusing on synergizing foundational models with novel hardware, seen in the burgeoning interest in multimodal systems and sectors like biology and robotics, where custom hardware can more effectively meet specific application needs.\n\nThe emerging narrative is one of strategic divergence. AI labs are not just competing on the front of raw compute investment but are exploring well-rounded strategies that redefine their operational priorities. This departure from traditional compute optimization indicates not just a tactical shift but also a projection of a future where flexibility and ingenuity are central to AI success. As these labs carve their paths, they are reshaping the contours of AI progression, positioning custom hardware as a crucial component alongside compute.\n\nTo conclude, while compute optimization remains vital to AI development, its dominance is no longer unmatched. The surge of hardware customization marks a significant shift in how AI capabilities are conceptualized and actualized. The movement towards diversified strategies among leading-edge AI labs indicates a broader evolution within the industry. It suggests that future AI breakthroughs will be defined not only by sheer computational power but by imaginative and strategic implementations across every layer of the AI technology stack. As stakeholders and investors look toward the future, one insight is clear: triumph in the AI race will increasingly rely on crafting an optimal blend of resources, with bespoke hardware taking an expanding and essential role.",
+  "assessment": {
+    "structural": [
+      {
+        "check": "all_nodes_fired",
+        "pass": true,
+        "detail": "missing: none"
+      },
+      {
+        "check": "all_llm_nodes_have_tokens",
+        "pass": true,
+        "detail": "zero-token nodes: none"
+      },
+      {
+        "check": "final_non_empty",
+        "pass": true,
+        "detail": "4810 chars"
+      },
+      {
+        "check": "no_encoding_noise",
+        "pass": true,
+        "detail": "clean"
+      },
+      {
+        "check": "essay_word_band",
+        "pass": true,
+        "detail": "660 words"
+      },
+      {
+        "check": "voice_length_in_bounds",
+        "pass": true,
+        "detail": "ratio 1.001"
+      },
+      {
+        "check": "kept_claims_preserved",
+        "pass": true,
+        "detail": "0 missing"
+      }
+    ],
+    "slop": {
+      "slop_phrases": [
+        "cutting-edge"
+      ],
+      "hedge_phrases": [],
+      "slop_count": 1,
+      "hedge_count": 0,
+      "clean": false
+    },
+    "judge": {
+      "insight_density": 7,
+      "originality": 6,
+      "hook_strength": 6,
+      "authentic_voice": 5,
+      "clarity": 7,
+      "overall": 7,
+      "one_line_verdict": "The essay offers a clear and insightful analysis on AI lab divergence, but lacks a strong, authentic voice."
+    }
+  }
+}

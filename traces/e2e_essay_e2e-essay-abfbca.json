@@ -1,0 +1,327 @@
+{
+  "case": {
+    "name": "essay",
+    "content_type": "essay",
+    "user_topic": "Frontier AI labs in 2026 are diverging on what they optimize for, not converging on capability",
+    "note": "RAG-hit, long-form argument structure"
+  },
+  "run_id": "e2e-essay-abfbca",
+  "wall_ms": 77768,
+  "trace_summary": {
+    "total_duration_ms": 77762.76,
+    "total_tokens": 45562,
+    "total_llm_calls": 8
+  },
+  "traces": [
+    {
+      "node_name": "discovery",
+      "started_at": 1780030714.3803947,
+      "finished_at": 1780030728.8667798,
+      "duration_ms": 14486.39,
+      "input_summary": "Frontier AI labs in 2026 are diverging on what they optimize for, not converging on capability",
+      "output_summary": "TOPIC: Frontier AI labs in 2026 are diverging on what they optimize for, not converging on capability\nCONTENT TYPE: essay\nKEY FACTS:\n- Local U.S. policymakers are divided on AI priorities, with 80.4% ...",
+      "prompt_tokens": 2054,
+      "completion_tokens": 591,
+      "total_tokens": 2645,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "retrieval",
+      "started_at": 1780030728.867781,
+      "finished_at": 1780030729.7886045,
+      "duration_ms": 920.82,
+      "input_summary": "Frontier AI labs in 2026 are diverging on what they optimize for, not converging on capability",
+      "output_summary": "['voice_samples', 'rag_context']",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "angle",
+      "started_at": 1780030729.7896042,
+      "finished_at": 1780030739.4722195,
+      "duration_ms": 9682.62,
+      "input_summary": "Frontier AI labs in 2026 are diverging on what they optimize for, not converging on capability",
+      "output_summary": "['all_angles', 'selected_angles', 'angle_strategy_note']",
+      "prompt_tokens": 4654,
+      "completion_tokens": 1177,
+      "total_tokens": 5831,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "draft_writer",
+      "started_at": 1780030739.4732208,
+      "finished_at": 1780030750.9952073,
+      "duration_ms": 11521.99,
+      "input_summary": "Frontier AI labs in 2026 are diverging on what they optimize for, not converging on capability",
+      "output_summary": "In 2026, while the world looks on, enamored by the flashy model capabilities of artificial intelligence, the true frontier of AI innovation quietly lies beneath the surface, in the infrastructure—ofte...",
+      "prompt_tokens": 4105,
+      "completion_tokens": 939,
+      "total_tokens": 5044,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "critic",
+      "started_at": 1780030750.9962058,
+      "finished_at": 1780030755.8041472,
+      "duration_ms": 4807.94,
+      "input_summary": "Frontier AI labs in 2026 are diverging on what they optimize for, not converging on capability",
+      "output_summary": "['critic_verdict', 'draft_passed', 'critic_feedback_history']",
+      "prompt_tokens": 1693,
+      "completion_tokens": 396,
+      "total_tokens": 2089,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "draft_writer",
+      "started_at": 1780030755.8071494,
+      "finished_at": 1780030762.1339529,
+      "duration_ms": 6326.8,
+      "input_summary": "Frontier AI labs in 2026 are diverging on what they optimize for, not converging on capability",
+      "output_summary": "In 2026, while the world looks on, enamored by the flashy model capabilities of artificial intelligence, the true frontier of AI innovation quietly lies beneath the surface, in the infrastructure—ofte...",
+      "prompt_tokens": 5124,
+      "completion_tokens": 783,
+      "total_tokens": 5907,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "critic",
+      "started_at": 1780030762.134956,
+      "finished_at": 1780030764.7074711,
+      "duration_ms": 2572.52,
+      "input_summary": "Frontier AI labs in 2026 are diverging on what they optimize for, not converging on capability",
+      "output_summary": "['critic_verdict', 'draft_passed', 'critic_feedback_history']",
+      "prompt_tokens": 1537,
+      "completion_tokens": 311,
+      "total_tokens": 1848,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "fact_checker",
+      "started_at": 1780030764.7094877,
+      "finished_at": 1780030783.0923886,
+      "duration_ms": 18382.9,
+      "input_summary": "Frontier AI labs in 2026 are diverging on what they optimize for, not converging on capability",
+      "output_summary": "['fact_check_results', 'post_factcheck_draft']",
+      "prompt_tokens": 13583,
+      "completion_tokens": 1875,
+      "total_tokens": 15458,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "voice_reviewer",
+      "started_at": 1780030783.0933955,
+      "finished_at": 1780030792.1431565,
+      "duration_ms": 9049.76,
+      "input_summary": "Frontier AI labs in 2026 are diverging on what they optimize for, not converging on capability",
+      "output_summary": "In 2026, as the global audience remains captivated by the flashy model capabilities of artificial intelligence, the subtle yet transformative frontier of AI innovation quietly unfolds within its infra...",
+      "prompt_tokens": 5717,
+      "completion_tokens": 1023,
+      "total_tokens": 6740,
+      "error": null,
+      "metadata": {}
+    }
+  ],
+  "draft_iteration": 2,
+  "draft_passed": false,
+  "selected_topic_summary": "TOPIC: Frontier AI labs in 2026 are diverging on what they optimize for, not converging on capability\nCONTENT TYPE: essay\nKEY FACTS:\n- Local U.S. policymakers are divided on AI priorities, with 80.4% backing stricter data privacy but only 34.2% supporting a facial recognition ban — (source: Artificial Intelligence Index Report 2025 - AWS)\n- The shift from AI assistants to autonomous AI agents is redefining organizational operations — (source: AI and Data Priorities for 2025 - WWT)\n- U.S. corporate labs like 'private national research labs' are dominating AI research compared to China's university-led model — (source: Who pushed the AI frontier at NeurIPS 2025?)\n- Transitioning from static to adaptive AI workflows in laboratories points towards more dynamic AI applications — (source: From Static Workflows to Adaptive AI & Strategic Growth - YouTube)\n- China's humanoid robotics market is expected to double, showing different optimization priorities — (source: Contrarian Views That Could Shape Markets in 2026 - Morgan Stanley)\n- Competitors are focusing on building the infrastructure ('plumbing') over just picking models, with pressure to fill capability gaps — (source: What Is the Next Big Thing in AI as of March 2026?)\nTENSIONS:\n- There is a divide between prioritizing data privacy in the U.S. versus facial recognition technology regulation — (source: Artificial Intelligence Index Report 2025 - AWS)\n- Contrasts between U.S. corporate research-dominated AI advancements and China's state-supported university system — (source: Who pushed the AI frontier at NeurIPS 2025?)\n- The debate between focusing on AI infrastructure development versus model capability advancements — (source: What Is the Next Big Thing in AI as of March 2026?)\nANGLE SEEDS:\n- Despite global discourse on AI capabilities, true growth lies in supporting infrastructure — a critical but overlooked area.\n- AI's future isn't just about capabilities; it's about embracing diverse optimization strategies tailored to different national priorities.\n- As AI systems become more autonomous, the optimization divergence highlights the necessity for flexible ROI models and team structures.\n- In a world fascinated by model capabilities, investment in the 'plumbing' offers sustainable competitive advantage.\nAUDIENCE CONTEXT: Policymakers, corporate leaders, and AI researchers currently care about the divergence in optimization priorities because it affects policy development, investment strategies, and global competitive positioning.",
+  "selected_angles": [
+    {
+      "angle_text": "Contrary to popular belief, the real AI frontier in 2026 is infrastructure, not merely model capabilities — the plumbing is where innovation is happening.",
+      "angle_type": "CONTRARIAN",
+      "hook_strength": 8,
+      "defensibility": 7,
+      "originality": 8,
+      "shareability": 8,
+      "thesis_fidelity": 6,
+      "total_score": 37,
+      "selected": true
+    }
+  ],
+  "fact_check_results": [
+    {
+      "claim_text": "In 2026, while the world looks on, enamored by the flashy model capabilities of artificial intelligence",
+      "claim_type": "event",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "supported",
+      "rag_confidence": 0.8,
+      "rag_evidence": "By comparison, much of the rest of the world seems to be in denial about the capabilities of AI systems today, let alone those that will exist in six months or a year, and so is therefore caught in a “retreat from the present”, denying the validity of the technology.",
+      "web_status": "unverifiable",
+      "web_evidence": ""
+    },
+    {
+      "claim_text": "Illustrating this shift, the transition from static AI assistants to dynamic autonomous agents marks a profound change.",
+      "claim_type": "causal",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "supported",
+      "rag_confidence": 0.9,
+      "rag_evidence": "As AI systems move from their confines of proprietary platforms or chat-based interfaces, and as they take on the ability to move and act independently through the use of tools over time, the matter of securing AI moves from one centered on platform that is deploying the technology to one centered on the whole ecosystem in which the AI systems are being deployed into – which means that AI safety is increasingly going to be about securing the larger environment in which these agents are deployed.",
+      "web_status": "unverifiable",
+      "web_evidence": ""
+    },
+    {
+      "claim_text": "As referenced in the report 'AI and Data Priorities for 2025,' these agents necessitate an infrastructure that supports real-time adaptability and scalability",
+      "claim_type": "attribution",
+      "verified": false,
+      "action": "soften",
+      "rag_status": "not_found",
+      "rag_confidence": 0.8,
+      "rag_evidence": "",
+      "web_status": "unverifiable",
+      "web_evidence": "The search results do not provide specific information or excerpts from the 'AI and Data Priorities for 2025' report that directly mention the need for infrastructure supporting real-time adaptability and scalability for agents."
+    },
+    {
+      "claim_text": "In the U.S., corporate labs function akin to 'private national research labs,' surpassing China's university-driven initiatives",
+      "claim_type": "comparison",
+      "verified": false,
+      "action": "soften",
+      "rag_status": "not_found",
+      "rag_confidence": 0.8,
+      "rag_evidence": "",
+      "web_status": "unverifiable",
+      "web_evidence": "The search results do not provide direct information on whether corporate labs in the U.S. function akin to 'private national research labs' and surpass China's university-driven initiatives. The results discuss the AI strategies and publication contributions of the U.S. and China, but do not specifically address the role of corporate labs in the U.S. or their comparison to China's university initiatives."
+    },
+    {
+      "claim_text": "China's humanoid robotics market, expected to double by 2026",
+      "claim_type": "statistic",
+      "verified": false,
+      "action": "soften",
+      "rag_status": "not_found",
+      "rag_confidence": 0.8,
+      "rag_evidence": "",
+      "web_status": "unverifiable",
+      "web_evidence": "The search results indicate that China's robotics industry is expected to experience significant growth by 2026, with the market size projected to exceed USD 50 billion. However, there is no specific information about the humanoid robotics market or its expected growth. Therefore, the claim about the humanoid robotics market specifically doubling by 2026 cannot be verified with the provided information."
+    },
+    {
+      "claim_text": "(NeurIPS 2025)",
+      "claim_type": "attribution",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "not_found",
+      "rag_confidence": 0.8,
+      "rag_evidence": "",
+      "web_status": "supported",
+      "web_evidence": "All search results reference events, presentations, and innovations associated with NeurIPS 2025, indicating the occurrence of the conference."
+    },
+    {
+      "claim_text": "as indicated by the Artificial Intelligence Index Report 2025, while U.S. policymakers are mostly inclined towards stricter data privacy (80.4%), a substantial division exists regarding facial recognition bans (34.2%)",
+      "claim_type": "attribution",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "supported",
+      "rag_confidence": 0.9,
+      "rag_evidence": "The strongest backing is for stricter data privacy rules (80.4%)... support drops significantly for a law enforcement facial recognition ban (34.2%).",
+      "web_status": "unverifiable",
+      "web_evidence": ""
+    }
+  ],
+  "voice_review": {
+    "style_profile": {
+      "avg_sentence_length": 16,
+      "sentence_length_variance": "high",
+      "vocabulary_level": "advanced",
+      "favorite_constructions": [
+        "subordinate clauses",
+        "parenthetical remarks"
+      ],
+      "tone_markers": [
+        "analytical",
+        "technical",
+        "opinionated"
+      ],
+      "paragraph_length": "long (5+)",
+      "opening_style": "introducing a concept or trend",
+      "closing_style": "summarizing key points or implications",
+      "punctuation_habits": [
+        "frequent use of commas",
+        "occasional ellipses"
+      ],
+      "formality_level": 7,
+      "humor_frequency": "rare"
+    },
+    "voice_match_score": 1.0,
+    "adjustments_made": [
+      "restructured paragraphs for clarity and flow",
+      "broke complex sentences into shorter components for readability",
+      "added parenthetical insights to match author's style",
+      "enhanced analytical and technical phrasing",
+      "reused specific phrases from must-preserve claims in a new context",
+      "used varied sentence rhythms including introductory clauses and set-asides"
+    ],
+    "length_ratio": 1.018,
+    "length_in_bounds": true,
+    "kept_claims_total": 4,
+    "kept_claims_preserved": 4,
+    "missing_kept_claims": [],
+    "restoration_attempted": false
+  },
+  "final_content": "In 2026, as the global audience remains captivated by the flashy model capabilities of artificial intelligence, the subtle yet transformative frontier of AI innovation quietly unfolds within its infrastructure. Like an iceberg, the observable feats of AI—ranging from large language models crafting symphonies to autonomous agents adept in complex human interactions—represent merely the visible tip. These wonders are underpinned by a robust, diligently constructed foundation that emphasizes the intricate plumbing enabling these models to operate with precision and efficiency, rather than simply crafting superior models.\n\nThe prevailing narrative surrounding AI's evolution is heavily skewed towards capability expansion, often overshadowing the equally vital role of infrastructure. Conversations tend to focus on increments in model size and sophistication, presuming a linear progression towards surpassing human faculties; yet, the foundational question lies in how these capabilities are supported and deployed. This overlooked emphasis is exemplified by leading companies such as OpenAI, which attract attention for their headline-grabbing models. A more nuanced inspection, however, unveils a growing divergence among AI labs, particularly in optimizing operations, with infrastructure emerging as a crucial differentiator.\n\nIllustrating this shift, the transition from static AI assistants to dynamic autonomous agents marks a profound change. Reports indicate that these agents demand an infrastructure that facilitates real-time adaptability and scalability, highlighting that the backbone of AI application is progressively becoming a competitive advantage. In the existing landscape, this holds more sway for practical applications than the sheer capability of the models themselves.\n\nAdditionally, contrasting corporate and national approaches underscore the pivotal role of infrastructure. Reports observe that U.S. corporate labs are sometimes compared to 'private national research labs,' potentially outpacing China's university-led initiatives not only in developing avant-garde models but also in crafting advanced infrastructures for quick, versatile domain applications. This focus on infrastructure ensures agility and sustains a competitive edge, facilitating seamless integration into operational frameworks tuned to specific needs.\n\nIn the context of the international market, optimization priorities diverge distinctly. Reports suggest China's robotics industry, including humanoid robotics, is projected to witness significant expansion by 2026, implying that innovation there gives prominence to interaction with the physical environment over digital model performance. This underscores a broader trend: the crucial role of the systems and environments empowering model functionality.\n\nCritics might insist that model capabilities are the prime engine propelling AI advancement, capturing imaginations and driving investments. Nonetheless, relegating infrastructure to a secondary status overlooks its fundamental role in scalability and tangible impact. The true strength of a sophisticated model resides in its effortless integration into practical applications, as seen in enterprise deployments embedding models into infrastructure for dependable performance across networks and cloud systems.\n\nThe focus on infrastructure also highlights tensions in policy development, where the dichotomy of privacy versus capability underscores infrastructural challenges. As indicated by the Artificial Intelligence Index Report 2025, U.S. policymakers predominantly favor stricter data privacy (80.4%), yet a considerable divergence exists regarding facial recognition bans (34.2%), necessitating resilient infrastructure capable of enacting flexible policy measures.\n\nReconciliating the dynamic debates over AI’s future—between model-centric and infrastructure-prevalent narratives—illuminates that infrastructure prominence signifies AI’s maturation. It envisions a future where potential isn't constrained to model abilities but broadens through the environments they're able to transform. This optimization divergence among frontier labs highlights a dynamic where infrastructure emerges as the keystone unlocking AI’s broader societal benefits.\n\nUltimately, the real AI frontier in 2026 resides not solely in formidable model capabilities but in the seamless interconnectedness and adaptability that contemporary infrastructures afford. It's akin to constructing more intelligent roads to navigate diverse terrains, positioning infrastructure not merely as a supporting cast but as the stage itself for AI's profound impacts. As the field advances, acknowledging infrastructure's role will spark breakthroughs, amplifying AI’s evolution beyond conventional horizons.",
+  "assessment": {
+    "structural": [
+      {
+        "check": "all_nodes_fired",
+        "pass": true,
+        "detail": "missing: none"
+      },
+      {
+        "check": "all_llm_nodes_have_tokens",
+        "pass": true,
+        "detail": "zero-token nodes: none"
+      },
+      {
+        "check": "final_non_empty",
+        "pass": true,
+        "detail": "4797 chars"
+      },
+      {
+        "check": "no_encoding_noise",
+        "pass": true,
+        "detail": "clean"
+      },
+      {
+        "check": "essay_word_band",
+        "pass": true,
+        "detail": "617 words"
+      },
+      {
+        "check": "voice_length_in_bounds",
+        "pass": true,
+        "detail": "ratio 1.018"
+      },
+      {
+        "check": "kept_claims_preserved",
+        "pass": true,
+        "detail": "0 missing"
+      }
+    ],
+    "slop": {
+      "slop_phrases": [
+        "seamless"
+      ],
+      "hedge_phrases": [],
+      "slop_count": 1,
+      "hedge_count": 0,
+      "clean": false
+    },
+    "judge": {
+      "insight_density": 8,
+      "originality": 7,
+      "hook_strength": 6,
+      "authentic_voice": 7,
+      "clarity": 6,
+      "overall": 7,
+      "one_line_verdict": "Strong insight into infrastructure's role offers originality, but a clearer hook and narrative flow would enhance impact."
+    }
+  }
+}

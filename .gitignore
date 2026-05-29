@@ -1,0 +1,24 @@
+
+__pycache__/
+*.pyc
+.env
+.env.local
+.next/
+node_modules/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+frontend/.next/
+frontend/node_modules/
+
+# Python virtualenv
+venv/
+.venv/
+
+# Throwaway / test vector store (the real corpus lives in data/chroma_db/)
+data/chroma_db_test_retrieval/
+
+# Claude Code session transcripts / conversation history — never commit
+/last_conv.txt
+/20??-??-??-*.txt

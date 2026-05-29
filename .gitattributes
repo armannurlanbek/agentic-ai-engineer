@@ -1,0 +1,15 @@
+* text=auto eol=lf
+
+# Never apply EOL conversion to binary assets (would corrupt the vector store)
+*.bin binary
+*.sqlite3 binary
+*.parquet binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+
+# Deploy process file must stay LF for Linux runners
+Procfile text eol=lf

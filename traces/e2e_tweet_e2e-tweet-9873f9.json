@@ -1,0 +1,268 @@
+{
+  "case": {
+    "name": "tweet",
+    "content_type": "tweet",
+    "user_topic": "Why most production AI agents fail on reliability, not capability",
+    "note": "RAG-hit (corpus deep on agents) + voice samples from corpus"
+  },
+  "run_id": "e2e-tweet-9873f9",
+  "wall_ms": 40537,
+  "trace_summary": {
+    "total_duration_ms": 40532.98,
+    "total_tokens": 25329,
+    "total_llm_calls": 8
+  },
+  "traces": [
+    {
+      "node_name": "discovery",
+      "started_at": 1780029716.6775138,
+      "finished_at": 1780029727.2280276,
+      "duration_ms": 10550.51,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "TOPIC: Why most production AI agents fail on reliability, not capability\nCONTENT TYPE: tweet\nKEY FACTS:\n- Browser agents operating at higher autonomy levels (L4-L5) offer limited opportunities for use...",
+      "prompt_tokens": 2045,
+      "completion_tokens": 364,
+      "total_tokens": 2409,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "retrieval",
+      "started_at": 1780029727.2290308,
+      "finished_at": 1780029728.2901108,
+      "duration_ms": 1061.08,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "['voice_samples', 'rag_context']",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "angle",
+      "started_at": 1780029728.2911122,
+      "finished_at": 1780029735.055782,
+      "duration_ms": 6764.67,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "['all_angles', 'selected_angles', 'angle_strategy_note']",
+      "prompt_tokens": 3948,
+      "completion_tokens": 622,
+      "total_tokens": 4570,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "draft_writer",
+      "started_at": 1780029735.0567813,
+      "finished_at": 1780029736.900127,
+      "duration_ms": 1843.35,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "Most production AI agents stumble on reliability, not capability. Over 88% of executives report deployment issues not tied to technical abilities. Current models succeed 1 out of 10 times. Could rethi...",
+      "prompt_tokens": 4058,
+      "completion_tokens": 47,
+      "total_tokens": 4105,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "critic",
+      "started_at": 1780029736.9011223,
+      "finished_at": 1780029739.7773626,
+      "duration_ms": 2876.24,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "['critic_verdict', 'draft_passed', 'critic_feedback_history']",
+      "prompt_tokens": 691,
+      "completion_tokens": 339,
+      "total_tokens": 1030,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "draft_writer",
+      "started_at": 1780029739.7783566,
+      "finished_at": 1780029741.1614716,
+      "duration_ms": 1383.12,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "Are AI agents falling short because they can't be trusted, not because they can't perform? Despite high expectations, 88% of executives are frustrated by AI's unpredictability. Imagine AI only getting...",
+      "prompt_tokens": 4287,
+      "completion_tokens": 62,
+      "total_tokens": 4349,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "critic",
+      "started_at": 1780029741.1624715,
+      "finished_at": 1780029745.2239347,
+      "duration_ms": 4061.46,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "['critic_verdict', 'draft_passed', 'critic_feedback_history']",
+      "prompt_tokens": 706,
+      "completion_tokens": 357,
+      "total_tokens": 1063,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "fact_checker",
+      "started_at": 1780029745.224937,
+      "finished_at": 1780029753.2498717,
+      "duration_ms": 8024.93,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "['fact_check_results', 'post_factcheck_draft']",
+      "prompt_tokens": 2421,
+      "completion_tokens": 218,
+      "total_tokens": 2639,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "voice_reviewer",
+      "started_at": 1780029753.2498717,
+      "finished_at": 1780029757.2104983,
+      "duration_ms": 3960.63,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "Are AI agents falling short because they can't be trusted, rather than because they can't perform? Despite the high expectations, numerous reports suggest a significant number of executives are frustr...",
+      "prompt_tokens": 4804,
+      "completion_tokens": 360,
+      "total_tokens": 5164,
+      "error": null,
+      "metadata": {}
+    }
+  ],
+  "draft_iteration": 2,
+  "draft_passed": false,
+  "selected_topic_summary": "TOPIC: Why most production AI agents fail on reliability, not capability\nCONTENT TYPE: tweet\nKEY FACTS:\n- Browser agents operating at higher autonomy levels (L4-L5) offer limited opportunities for user intervention mid-execution, impacting reliability. (source: The 2025 AI Agent Index)\n- Over 88% of 300 surveyed executives in May 2025 claim their AI agent deployment faces challenges not related to the AI's technical capabilities, hinting at a reliability gap. (source: PwC AI agent survey: PwC)\n- AI models frequently nail tasks with less consistent reliability, achieving success only 1 out of 10 times, whereas users need 99.999% precision. (source: AI Capability vs Reliability: Why Most AI Products Fail - LinkedIn)\nTENSIONS:\n- Despite high expectations, the practical scalability of AI agents across business functions lags behind due to reliability concerns, rather than capability limitations. This raises debate over resource allocation strategies in AI deployment. (source: 2025 was a failure for the AI Agent?)\nANGLE SEEDS:\n- What good is an AI model hitting the mark 1 in 10 times when business integrity demands near-perfect reliability?\n- Executives are learning the hard way: it's not about AI's capabilities but ensuring consistent performance — a wake-up call for companies betting big on AI autonomy.\nAUDIENCE CONTEXT: Tech entrepreneurs, business executives, and AI developers are keenly invested in solving the reliability challenges of AI agents to ensure successful deployments and enhance productivity.",
+  "selected_angles": [
+    {
+      "angle_text": "Contrary to popular belief, AI's ability isn't the main issue—88% of executives say reliability gaps hinder AI agent deployments.",
+      "angle_type": "CONTRARIAN",
+      "hook_strength": 9,
+      "defensibility": 9,
+      "originality": 8,
+      "shareability": 8,
+      "thesis_fidelity": 9,
+      "total_score": 43,
+      "selected": true
+    }
+  ],
+  "fact_check_results": [
+    {
+      "claim_text": "88% of executives are frustrated by AI's unpredictability.",
+      "claim_type": "statistic",
+      "verified": false,
+      "action": "soften",
+      "rag_status": "not_found",
+      "rag_confidence": 0.7,
+      "rag_evidence": "",
+      "web_status": "unverifiable",
+      "web_evidence": "The search results do not directly address or provide information about executives being frustrated by AI's unpredictability. They discuss AI budget increases, lack of governance confidence, and the absence of productivity gains, but not unpredictability."
+    }
+  ],
+  "voice_review": {
+    "style_profile": {
+      "avg_sentence_length": 25,
+      "sentence_length_variance": "medium",
+      "vocabulary_level": "moderate",
+      "favorite_constructions": [
+        "using <method>",
+        "it can be <outcome> if <condition>",
+        "this might be because of <reason>"
+      ],
+      "tone_markers": [
+        "analytical",
+        "informative",
+        "reflective"
+      ],
+      "paragraph_length": "medium (3-4)",
+      "opening_style": "introduces a concept or raises a question",
+      "closing_style": "summarizes insights or highlights an unresolved question",
+      "punctuation_habits": [
+        "frequent use of commas",
+        "occasional use of em dashes and parentheses"
+      ],
+      "formality_level": 6,
+      "humor_frequency": "rare"
+    },
+    "voice_match_score": 1.0,
+    "adjustments_made": [
+      "Added 'rather than' to clarify contrast in the opening question",
+      "Rephrased 'reports suggest that a significant number of executives express frustration' to 'reports suggest a significant number of executives are frustrated' for conciseness",
+      "Replaced 'what's missing here' with 'what's really missing here' to add emphasis",
+      "Made 'unlock AI's full potential' a rhetorical question for reflective tone"
+    ],
+    "length_ratio": 1.092,
+    "length_in_bounds": true,
+    "kept_claims_total": 0,
+    "kept_claims_preserved": 0,
+    "missing_kept_claims": [],
+    "restoration_attempted": false
+  },
+  "final_content": "Are AI agents falling short because they can't be trusted, rather than because they can't perform? Despite the high expectations, numerous reports suggest a significant number of executives are frustrated by AI's unpredictability. Imagine if AI only got it right 10% of the time—what's really missing here? Could rethinking reliability be the key to unlocking AI's full potential?",
+  "assessment": {
+    "structural": [
+      {
+        "check": "all_nodes_fired",
+        "pass": true,
+        "detail": "missing: none"
+      },
+      {
+        "check": "all_llm_nodes_have_tokens",
+        "pass": true,
+        "detail": "zero-token nodes: none"
+      },
+      {
+        "check": "final_non_empty",
+        "pass": true,
+        "detail": "380 chars"
+      },
+      {
+        "check": "no_encoding_noise",
+        "pass": true,
+        "detail": "clean"
+      },
+      {
+        "check": "no_emoji",
+        "pass": true,
+        "detail": "none"
+      },
+      {
+        "check": "no_hashtags",
+        "pass": true,
+        "detail": "none"
+      },
+      {
+        "check": "within_280_chars",
+        "pass": false,
+        "detail": "380 chars"
+      },
+      {
+        "check": "voice_length_in_bounds",
+        "pass": true,
+        "detail": "ratio 1.092"
+      },
+      {
+        "check": "kept_claims_preserved",
+        "pass": true,
+        "detail": "0 missing"
+      }
+    ],
+    "slop": {
+      "slop_phrases": [],
+      "hedge_phrases": [],
+      "slop_count": 0,
+      "hedge_count": 0,
+      "clean": true
+    },
+    "judge": {
+      "insight_density": 6,
+      "originality": 5,
+      "hook_strength": 6,
+      "authentic_voice": 5,
+      "clarity": 7,
+      "overall": 6,
+      "one_line_verdict": "Clarity is strongest with a concise question, while originality lags due to common themes in AI dialogue."
+    }
+  }
+}

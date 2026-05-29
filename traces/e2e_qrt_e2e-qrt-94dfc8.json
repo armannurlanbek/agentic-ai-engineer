@@ -1,0 +1,295 @@
+{
+  "case": {
+    "name": "qrt",
+    "content_type": "quote_retweet",
+    "user_topic": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+    "original_tweet_text": "DeepSeek just dropped another open model that matches frontier closed models on most benchmarks. The moat was never the weights.",
+    "note": "QRT path — must add insight, not summarize the original"
+  },
+  "run_id": "e2e-qrt-94dfc8",
+  "wall_ms": 51583,
+  "trace_summary": {
+    "total_duration_ms": 51578.78,
+    "total_tokens": 23444,
+    "total_llm_calls": 8
+  },
+  "traces": [
+    {
+      "node_name": "discovery",
+      "started_at": 1780030084.9254704,
+      "finished_at": 1780030096.9880588,
+      "duration_ms": 12062.59,
+      "input_summary": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+      "output_summary": "TOPIC: Open-weight models are closing on closed frontier faster than Western labs predicted\nCONTENT TYPE: quote_retweet\nKEY FACTS:\n- Meta has released Llama 3.1 405B and announced plans for Llama 4 us...",
+      "prompt_tokens": 2012,
+      "completion_tokens": 351,
+      "total_tokens": 2363,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "retrieval",
+      "started_at": 1780030096.9890535,
+      "finished_at": 1780030098.0722425,
+      "duration_ms": 1083.19,
+      "input_summary": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+      "output_summary": "['voice_samples', 'rag_context']",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "angle",
+      "started_at": 1780030098.073243,
+      "finished_at": 1780030106.0403852,
+      "duration_ms": 7967.14,
+      "input_summary": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+      "output_summary": "['all_angles', 'selected_angles', 'angle_strategy_note']",
+      "prompt_tokens": 3309,
+      "completion_tokens": 611,
+      "total_tokens": 3920,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "draft_writer",
+      "started_at": 1780030106.0413873,
+      "finished_at": 1780030110.1025498,
+      "duration_ms": 4061.16,
+      "input_summary": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+      "output_summary": "Llama 3.1's heavyweight computational approach contrasts sharply with DeepSeek's efficient open model. It's a shift: success isn't about sheer power or weights alone. As we reassess AI economics, valu...",
+      "prompt_tokens": 1248,
+      "completion_tokens": 54,
+      "total_tokens": 1302,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "critic",
+      "started_at": 1780030110.103541,
+      "finished_at": 1780030113.752359,
+      "duration_ms": 3648.82,
+      "input_summary": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+      "output_summary": "['critic_verdict', 'draft_passed', 'critic_feedback_history']",
+      "prompt_tokens": 672,
+      "completion_tokens": 291,
+      "total_tokens": 963,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "draft_writer",
+      "started_at": 1780030113.7533572,
+      "finished_at": 1780030115.2760775,
+      "duration_ms": 1522.72,
+      "input_summary": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+      "output_summary": "Llama 3.1's computational intensity, utilizing nearly 10x more compute, starkly contrasts DeepSeek's efficient open model approach. Despite this, DeepSeek R1 now achieves roughly 90% of closed models'...",
+      "prompt_tokens": 3348,
+      "completion_tokens": 84,
+      "total_tokens": 3432,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "critic",
+      "started_at": 1780030115.2770824,
+      "finished_at": 1780030118.6693597,
+      "duration_ms": 3392.28,
+      "input_summary": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+      "output_summary": "['critic_verdict', 'draft_passed', 'critic_feedback_history']",
+      "prompt_tokens": 702,
+      "completion_tokens": 350,
+      "total_tokens": 1052,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "fact_checker",
+      "started_at": 1780030118.6703594,
+      "finished_at": 1780030129.4080465,
+      "duration_ms": 10737.69,
+      "input_summary": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+      "output_summary": "['fact_check_results', 'post_factcheck_draft']",
+      "prompt_tokens": 6721,
+      "completion_tokens": 655,
+      "total_tokens": 7376,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "voice_reviewer",
+      "started_at": 1780030129.4100494,
+      "finished_at": 1780030136.504252,
+      "duration_ms": 7094.2,
+      "input_summary": "Open-weight models are closing on closed frontier faster than Western labs predicted",
+      "output_summary": "In the fast-evolving landscape of artificial intelligence, Llama 3.1 stands out for its heavy computational demands—a stark contrast to the streamlined approach of DeepSeek's models. Still, DeepSeek R...",
+      "prompt_tokens": 2700,
+      "completion_tokens": 336,
+      "total_tokens": 3036,
+      "error": null,
+      "metadata": {}
+    }
+  ],
+  "draft_iteration": 2,
+  "draft_passed": false,
+  "selected_topic_summary": "TOPIC: Open-weight models are closing on closed frontier faster than Western labs predicted\nCONTENT TYPE: quote_retweet\nKEY FACTS:\n- Meta has released Llama 3.1 405B and announced plans for Llama 4 using 'almost 10x more' compute by next year (source: Epoch AI).\n- The DeepSeek R1 release in January 2025 significantly narrowed the performance gap between open and closed models (source: Medium).\n- Open models achieve about 90% of the performance of closed models, with inference costs being 87% less (source: MIT Sloan School of Management).\nTENSIONS:\n- While open models close performance gaps, the transparency and trust offered by open weights risks exposing vulnerabilities, whereas closed models offer security through controlled access (source: YouTube, 'Closed vs Open AI Models').\nANGLE SEEDS:\n- The rapid advancement of open-weight models like DeepSeek suggests the gap between open and closed models is closing faster than anticipated — but does this truly nullify any advantages that closed models hold?\n- With impending upgrades to open models such as Llama 4, are closed model proponents underestimating the potential cost-effectiveness and accessibility of these supposed 'inferior' alternatives?\nAUDIENCE CONTEXT: Tech enthusiasts and AI researchers are particularly invested in this discussion as it highlights the evolving landscape of AI models, potentially impacting decisions on model adoption and investment across various industries.",
+  "selected_angles": [
+    {
+      "angle_text": "Despite Meta's Llama 3.1 running with almost 10x more compute, DeepSeek proves open models' economic edge isn't just about weights.",
+      "angle_type": "CONTRARIAN",
+      "hook_strength": 8,
+      "defensibility": 9,
+      "originality": 8,
+      "shareability": 8,
+      "thesis_fidelity": 9,
+      "total_score": 42,
+      "selected": true
+    }
+  ],
+  "fact_check_results": [
+    {
+      "claim_text": "Llama 3.1's computational intensity, utilizing nearly 10x more compute",
+      "claim_type": "comparison",
+      "verified": false,
+      "action": "soften",
+      "rag_status": "not_found",
+      "rag_confidence": 0.6,
+      "rag_evidence": "",
+      "web_status": "unverifiable",
+      "web_evidence": "The search results mention a scaling that is 'almost 50× more than the largest version of Llama 2' and a training budget of 3.8 × 10^25 FLOPs, but they do not specifically state that Llama 3.1 is utilizing nearly 10x more compute compared to Llama 2. The multiplication factor in computational intensity is mentioned as 50x in one part of the data, but the exact reference point for the 10x claim is unclear."
+    },
+    {
+      "claim_text": "DeepSeek R1 now achieves roughly 90% of closed models' performance",
+      "claim_type": "statistic",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "not_found",
+      "rag_confidence": 0.7,
+      "rag_evidence": "",
+      "web_status": "supported",
+      "web_evidence": "For treatment questions, DeepSeek-R1 and DeepSeek-V3 achieved accuracy rates of 92% (72/78) and 90% (70/78), respectively, both significantly outperforming the OpenAI models, whose accuracy ranged from 67% (52/78) to 68% (53/78; P<.001 for all comparisons)."
+    },
+    {
+      "claim_text": "87% less inference cost",
+      "claim_type": "statistic",
+      "verified": false,
+      "action": "soften",
+      "rag_status": "not_found",
+      "rag_confidence": 0.7,
+      "rag_evidence": "",
+      "web_status": "unverifiable",
+      "web_evidence": "The search results discuss the efficiency and cost reductions of different AI models and technologies, including models like TinyZero and the efficiency of DeepSeek's V4. However, these results do not provide specific information or data directly supporting or contradicting the claim of '87% less inference cost' for a specific model or context."
+    }
+  ],
+  "voice_review": {
+    "style_profile": {
+      "avg_sentence_length": 20,
+      "sentence_length_variance": "medium",
+      "vocabulary_level": "advanced",
+      "favorite_constructions": [
+        "Comparative statements",
+        "Rhetorical questions"
+      ],
+      "tone_markers": [
+        "Analytical",
+        "Informative"
+      ],
+      "paragraph_length": "medium (3-4)",
+      "opening_style": "Contextual introduction with background information",
+      "closing_style": "Summary with predictions or takeaways",
+      "punctuation_habits": [
+        "Frequent use of parentheses",
+        "Colons for emphasis",
+        "Commas in lists"
+      ],
+      "formality_level": 8,
+      "humor_frequency": "none"
+    },
+    "voice_match_score": 0.7,
+    "adjustments_made": [
+      "broke the original opening sentence into a more digestible two-sentence structure",
+      "used em dash for emphasis on 'a stark contrast'",
+      "simplified 'utilizes' to 'deliver' for more clarity",
+      "rephrased closing sentence to align with author's style of predictions and takeaways"
+    ],
+    "length_ratio": 1.297,
+    "length_in_bounds": false,
+    "kept_claims_total": 1,
+    "kept_claims_preserved": 1,
+    "missing_kept_claims": [],
+    "restoration_attempted": false
+  },
+  "final_content": "In the fast-evolving landscape of artificial intelligence, Llama 3.1 stands out for its heavy computational demands—a stark contrast to the streamlined approach of DeepSeek's models. Still, DeepSeek R1 manages to deliver approximately 90% of the performance seen in closed models, while significantly cutting inference costs. This illustrates a crucial economic shift in AI development. As the economics of AI are being redefined, factors like flexibility and accessibility are increasingly surpassing mere computational power in terms of value. #AIRevolution",
+  "assessment": {
+    "structural": [
+      {
+        "check": "all_nodes_fired",
+        "pass": true,
+        "detail": "missing: none"
+      },
+      {
+        "check": "all_llm_nodes_have_tokens",
+        "pass": true,
+        "detail": "zero-token nodes: none"
+      },
+      {
+        "check": "final_non_empty",
+        "pass": true,
+        "detail": "559 chars"
+      },
+      {
+        "check": "no_encoding_noise",
+        "pass": true,
+        "detail": "clean"
+      },
+      {
+        "check": "no_emoji",
+        "pass": true,
+        "detail": "none"
+      },
+      {
+        "check": "no_hashtags",
+        "pass": false,
+        "detail": "hashtag found"
+      },
+      {
+        "check": "within_280_chars",
+        "pass": false,
+        "detail": "559 chars"
+      },
+      {
+        "check": "qrt_not_echo",
+        "pass": true,
+        "detail": "word overlap 0.21"
+      },
+      {
+        "check": "voice_length_in_bounds",
+        "pass": false,
+        "detail": "ratio 1.297"
+      },
+      {
+        "check": "kept_claims_preserved",
+        "pass": true,
+        "detail": "0 missing"
+      }
+    ],
+    "slop": {
+      "slop_phrases": [],
+      "hedge_phrases": [],
+      "slop_count": 0,
+      "hedge_count": 0,
+      "clean": true
+    },
+    "judge": {
+      "insight_density": 7,
+      "originality": 6,
+      "hook_strength": 5,
+      "authentic_voice": 5,
+      "clarity": 7,
+      "overall": 6,
+      "one_line_verdict": "Good insight density but lacks a strong hook and distinctive voice."
+    }
+  }
+}

@@ -1,0 +1,281 @@
+{
+  "case": {
+    "name": "tweet",
+    "content_type": "tweet",
+    "user_topic": "Why most production AI agents fail on reliability, not capability",
+    "note": "RAG-hit (corpus deep on agents) + voice samples from corpus"
+  },
+  "run_id": "e2e-tweet-201e1e",
+  "wall_ms": 41158,
+  "trace_summary": {
+    "total_duration_ms": 41155.13,
+    "total_tokens": 27307,
+    "total_llm_calls": 8
+  },
+  "traces": [
+    {
+      "node_name": "discovery",
+      "started_at": 1780030543.6929514,
+      "finished_at": 1780030552.7511082,
+      "duration_ms": 9058.16,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "TOPIC: Why most production AI agents fail on reliability, not capability\nCONTENT TYPE: tweet\nKEY FACTS:\n- 70% of regulated enterprises rebuild their AI agent stack every three months, highlighting unr...",
+      "prompt_tokens": 1957,
+      "completion_tokens": 310,
+      "total_tokens": 2267,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "retrieval",
+      "started_at": 1780030552.7547061,
+      "finished_at": 1780030554.611596,
+      "duration_ms": 1856.89,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "['voice_samples', 'rag_context']",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "angle",
+      "started_at": 1780030554.6125944,
+      "finished_at": 1780030560.2211347,
+      "duration_ms": 5608.54,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "['all_angles', 'selected_angles', 'angle_strategy_note']",
+      "prompt_tokens": 3950,
+      "completion_tokens": 581,
+      "total_tokens": 4531,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "draft_writer",
+      "started_at": 1780030560.2234967,
+      "finished_at": 1780030562.3429568,
+      "duration_ms": 2119.46,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "85% of AI projects fail at production due to reliability, not capability. With 70% of regulated enterprises rebuilding AI stacks every three months, stability seems more elusive than ever. Are we mist...",
+      "prompt_tokens": 4125,
+      "completion_tokens": 50,
+      "total_tokens": 4175,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "critic",
+      "started_at": 1780030562.3449526,
+      "finished_at": 1780030566.1071503,
+      "duration_ms": 3762.2,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "['critic_verdict', 'draft_passed', 'critic_feedback_history']",
+      "prompt_tokens": 680,
+      "completion_tokens": 385,
+      "total_tokens": 1065,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "draft_writer",
+      "started_at": 1780030566.1101499,
+      "finished_at": 1780030567.1298635,
+      "duration_ms": 1019.71,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "85% of AI projects flop due to reliability failures, not a lack of capability. Due to reliability woes, 70% of regulated enterprises rebuild AI stacks every three months, highlighting the perilous pat...",
+      "prompt_tokens": 4398,
+      "completion_tokens": 59,
+      "total_tokens": 4457,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "critic",
+      "started_at": 1780030567.1308644,
+      "finished_at": 1780030570.2808938,
+      "duration_ms": 3150.03,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "['critic_verdict', 'draft_passed', 'critic_feedback_history']",
+      "prompt_tokens": 689,
+      "completion_tokens": 357,
+      "total_tokens": 1046,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "fact_checker",
+      "started_at": 1780030570.2838924,
+      "finished_at": 1780030580.6283813,
+      "duration_ms": 10344.49,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "['fact_check_results', 'post_factcheck_draft']",
+      "prompt_tokens": 4268,
+      "completion_tokens": 370,
+      "total_tokens": 4638,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "voice_reviewer",
+      "started_at": 1780030580.6293797,
+      "finished_at": 1780030584.8480768,
+      "duration_ms": 4218.7,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "Faced with reliability woes—an endemic challenge—it turns out that a staggering 70% of regulated enterprises find themselves in the vexing position of rebuilding their AI stacks every quarter. This fr...",
+      "prompt_tokens": 4772,
+      "completion_tokens": 356,
+      "total_tokens": 5128,
+      "error": null,
+      "metadata": {}
+    }
+  ],
+  "draft_iteration": 2,
+  "draft_passed": false,
+  "selected_topic_summary": "TOPIC: Why most production AI agents fail on reliability, not capability\nCONTENT TYPE: tweet\nKEY FACTS:\n- 70% of regulated enterprises rebuild their AI agent stack every three months, highlighting unreliable production environments. (source: AI Agents in Production 2025)\n- The Replit 'Rogue Agent' incident in July 2025 showed the fragility of relying on prompts, as agents can fail against adversarial users. (source: Why AI Agents Break: A Field Analysis of Production Failures)\n- Gartner's 2025 AI deployment survey found that 85% of AI projects fail to reach production, indicating a reliability issue. (source: Why 88% of AI Agents Fail Production: Analysis Guide)\nTENSIONS:\n- While some argue capability is the main challenge, others believe that AI's lack of reliability, such as unstable environments and prompt fragility, is more critical.\nANGLE SEEDS:\n- Most AI agent failures aren't about what they can do, but whether they can do it consistently when deployed.\n- Rebuilding AI stacks frequently underscores an industry grappling more with reliability than innovation.\nAUDIENCE CONTEXT: Tech developers and business leaders are deeply concerned about AI reliability right now due to increased pressure to deploy stable AI systems in competitive markets.",
+  "selected_angles": [
+    {
+      "angle_text": "85% of AI projects don't see the light of production, not due to capability but because reliability crumbles first.",
+      "angle_type": "DATA-DRIVEN",
+      "hook_strength": 8,
+      "defensibility": 9,
+      "originality": 7,
+      "shareability": 8,
+      "thesis_fidelity": 9,
+      "total_score": 41,
+      "selected": true
+    }
+  ],
+  "fact_check_results": [
+    {
+      "claim_text": "85% of AI projects flop due to reliability failures, not a lack of capability.",
+      "claim_type": "statistic",
+      "verified": false,
+      "action": "remove",
+      "rag_status": "not_found",
+      "rag_confidence": 0.8,
+      "rag_evidence": "",
+      "web_status": "contradicted",
+      "web_evidence": "The sources indicate that AI projects fail due to a variety of reasons, including data quality and quantity issues and failure to meet expected outcomes. Reliability failures are not singularly cited as the primary reason for the high failure rate of AI projects."
+    },
+    {
+      "claim_text": "70% of regulated enterprises rebuild AI stacks every three months, highlighting the perilous path to reliable AI production.",
+      "claim_type": "statistic",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "not_found",
+      "rag_confidence": 0.8,
+      "rag_evidence": "",
+      "web_status": "supported",
+      "web_evidence": "70% of regulated enterprises update their AI agent stack every three months or faster... According to a survey from AI data quality vendor Cleanlab, 70% of regulated enterprises — and 41% of unregulated organizations — replace at least part of their AI stacks every three months..."
+    }
+  ],
+  "voice_review": {
+    "style_profile": {
+      "avg_sentence_length": 20,
+      "sentence_length_variance": "high",
+      "vocabulary_level": "advanced",
+      "favorite_constructions": [
+        "conditional statements",
+        "parenthetical asides",
+        "rhetorical questions"
+      ],
+      "tone_markers": [
+        "analytical",
+        "conversational",
+        "informative"
+      ],
+      "paragraph_length": "long (5+)",
+      "opening_style": "direct and topic-focused",
+      "closing_style": "summary with final thought or future implications",
+      "punctuation_habits": [
+        "frequent use of commas for complex structures",
+        "occasional use of dashes"
+      ],
+      "formality_level": 7,
+      "humor_frequency": "rare"
+    },
+    "voice_match_score": 0.7,
+    "adjustments_made": [
+      "Reintroduced context with 'Faced with reliability woes—an endemic challenge' to set a clearer stage for the reader.",
+      "Used an em-dash to introduce an aside in the opening sentence for added emphasis.",
+      "Converted 'every three months' to 'every quarter' for variation in expression.",
+      "Enhanced rhetorical questioning by changing 'Is our focus on capability blinding us to reliability pitfalls in AI?' to a more elaborate inquiry."
+    ],
+    "length_ratio": 2.146,
+    "length_in_bounds": false,
+    "kept_claims_total": 1,
+    "kept_claims_preserved": 1,
+    "missing_kept_claims": [],
+    "restoration_attempted": false
+  },
+  "final_content": "Faced with reliability woes—an endemic challenge—it turns out that a staggering 70% of regulated enterprises find themselves in the vexing position of rebuilding their AI stacks every quarter. This frequent rebuilding underscores the treacherous landscape on the journey to reliable AI production. It begs the question: Are we perhaps overly enamored with AI's capabilities, to the point of overlooking the foundational reliability issues that persist in AI development?",
+  "assessment": {
+    "structural": [
+      {
+        "check": "all_nodes_fired",
+        "pass": true,
+        "detail": "missing: none"
+      },
+      {
+        "check": "all_llm_nodes_have_tokens",
+        "pass": true,
+        "detail": "zero-token nodes: none"
+      },
+      {
+        "check": "final_non_empty",
+        "pass": true,
+        "detail": "470 chars"
+      },
+      {
+        "check": "no_encoding_noise",
+        "pass": true,
+        "detail": "clean"
+      },
+      {
+        "check": "no_emoji",
+        "pass": true,
+        "detail": "none"
+      },
+      {
+        "check": "no_hashtags",
+        "pass": true,
+        "detail": "none"
+      },
+      {
+        "check": "within_280_chars",
+        "pass": false,
+        "detail": "470 chars"
+      },
+      {
+        "check": "voice_length_in_bounds",
+        "pass": false,
+        "detail": "ratio 2.146"
+      },
+      {
+        "check": "kept_claims_preserved",
+        "pass": true,
+        "detail": "0 missing"
+      }
+    ],
+    "slop": {
+      "slop_phrases": [],
+      "hedge_phrases": [
+        "perhaps"
+      ],
+      "slop_count": 0,
+      "hedge_count": 1,
+      "clean": true
+    },
+    "judge": {
+      "insight_density": 6,
+      "originality": 5,
+      "hook_strength": 4,
+      "authentic_voice": 5,
+      "clarity": 6,
+      "overall": 5,
+      "one_line_verdict": "The content offers some insight into reliability issues but lacks a strong hook and original perspective."
+    }
+  }
+}

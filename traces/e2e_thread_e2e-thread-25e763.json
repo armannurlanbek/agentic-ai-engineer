@@ -1,0 +1,332 @@
+{
+  "case": {
+    "name": "thread",
+    "content_type": "thread",
+    "user_topic": "What eval-driven development actually looks like for LLM agents in 2026",
+    "note": "RAG-hit, multi-segment numbered output"
+  },
+  "run_id": "e2e-thread-25e763",
+  "wall_ms": 62250,
+  "trace_summary": {
+    "total_duration_ms": 62246.0,
+    "total_tokens": 38556,
+    "total_llm_calls": 8
+  },
+  "traces": [
+    {
+      "node_name": "discovery",
+      "started_at": 1780032249.128117,
+      "finished_at": 1780032262.1649718,
+      "duration_ms": 13036.85,
+      "input_summary": "What eval-driven development actually looks like for LLM agents in 2026",
+      "output_summary": "TOPIC: Eval-driven development for LLM agents in 2026: Building and refining AI through evaluation-first approaches\nCONTENT TYPE: thread\nKEY FACTS:\n- Eval-driven development (EDD) emphasizes systemati...",
+      "prompt_tokens": 1825,
+      "completion_tokens": 447,
+      "total_tokens": 2272,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "retrieval",
+      "started_at": 1780032262.1649718,
+      "finished_at": 1780032263.2025118,
+      "duration_ms": 1037.54,
+      "input_summary": "What eval-driven development actually looks like for LLM agents in 2026",
+      "output_summary": "['voice_samples', 'rag_context']",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "angle",
+      "started_at": 1780032263.20351,
+      "finished_at": 1780032271.2506833,
+      "duration_ms": 8047.17,
+      "input_summary": "What eval-driven development actually looks like for LLM agents in 2026",
+      "output_summary": "['all_angles', 'selected_angles', 'angle_strategy_note']",
+      "prompt_tokens": 5315,
+      "completion_tokens": 959,
+      "total_tokens": 6274,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "draft_writer",
+      "started_at": 1780032271.251687,
+      "finished_at": 1780032275.074583,
+      "duration_ms": 3822.9,
+      "input_summary": "What eval-driven development actually looks like for LLM agents in 2026",
+      "output_summary": "1/ **Imagine AI as a courtroom where LLMs judge their own outputs, pioneering eval-driven development. This shift transforms how we build smarter, reliable AI agents.**\n\n2/ Eval-driven development (ED...",
+      "prompt_tokens": 3870,
+      "completion_tokens": 339,
+      "total_tokens": 4209,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "critic",
+      "started_at": 1780032275.0755842,
+      "finished_at": 1780032279.0908532,
+      "duration_ms": 4015.27,
+      "input_summary": "What eval-driven development actually looks like for LLM agents in 2026",
+      "output_summary": "['critic_verdict', 'draft_passed', 'critic_feedback_history']",
+      "prompt_tokens": 1130,
+      "completion_tokens": 451,
+      "total_tokens": 1581,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "draft_writer",
+      "started_at": 1780032279.0918586,
+      "finished_at": 1780032282.8980172,
+      "duration_ms": 3806.16,
+      "input_summary": "What eval-driven development actually looks like for LLM agents in 2026",
+      "output_summary": "1/ **Did you know that eval-driven development (EDD) can reduce AI errors by up to 25%?** This focus on evaluation over raw data is reshaping smarter, more reliable AI agents.\n\n2/ Eval-driven developm...",
+      "prompt_tokens": 4340,
+      "completion_tokens": 324,
+      "total_tokens": 4664,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "critic",
+      "started_at": 1780032282.8990183,
+      "finished_at": 1780032287.2835553,
+      "duration_ms": 4384.54,
+      "input_summary": "What eval-driven development actually looks like for LLM agents in 2026",
+      "output_summary": "['critic_verdict', 'draft_passed', 'critic_feedback_history']",
+      "prompt_tokens": 1115,
+      "completion_tokens": 417,
+      "total_tokens": 1532,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "fact_checker",
+      "started_at": 1780032287.2855563,
+      "finished_at": 1780032302.6750023,
+      "duration_ms": 15389.45,
+      "input_summary": "What eval-driven development actually looks like for LLM agents in 2026",
+      "output_summary": "['fact_check_results', 'post_factcheck_draft']",
+      "prompt_tokens": 10522,
+      "completion_tokens": 1097,
+      "total_tokens": 11619,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "voice_reviewer",
+      "started_at": 1780032302.6760085,
+      "finished_at": 1780032311.3741164,
+      "duration_ms": 8698.11,
+      "input_summary": "What eval-driven development actually looks like for LLM agents in 2026",
+      "output_summary": "1/ **Are you aware that eval-driven development (EDD) enhances the robustness of AI systems?** Focusing on evaluation rather than only on data transforms the creation of intelligent, dependable AI age...",
+      "prompt_tokens": 5476,
+      "completion_tokens": 929,
+      "total_tokens": 6405,
+      "error": null,
+      "metadata": {}
+    }
+  ],
+  "draft_iteration": 2,
+  "draft_passed": false,
+  "selected_topic_summary": "TOPIC: Eval-driven development for LLM agents in 2026: Building and refining AI through evaluation-first approaches\nCONTENT TYPE: thread\nKEY FACTS:\n- Eval-driven development (EDD) emphasizes systematic evaluation over raw training data, enabling iterative model improvements (source: applydata.io)\n- An LLM (Large Language Model) can act as a 'judge' to rate semantic search results on a scale from 0 to 3, guiding model improvements (source: applydata.io)\n- New LLM evaluation frameworks like MLflow offer extended capabilities for experiment tracking, supporting high scales of operations (source: futureagi.substack.com)\n- The introduction of reasoning models, often called 'thinking' variants, have dominated LLM development, with major releases following DeepSeek R1 (source: magazine.sebastianraschka.com)\n- Evaluation-driven strategies prioritize defined capabilities for AI agents, facilitating improvements before full deployment (source: anthropic.com)\nTENSIONS:\n- There is ongoing debate over the emphasis on performance evaluation at the expense of cost and efficiency metrics, possibly leading to resource-intensive agents (source: arxiv.org)\n- The subjective nature of evaluating outputs raises the issue of ensuring that automated evaluations align with human judgment (source: braintrust.dev)\nANGLE SEEDS:\n- Eval-driven development shifts AI design paradigms: Does focusing on evaluation-first approaches accelerate the pace of reliable AI agent deployment?\n- Are we risking resource inefficiency by prioritizing performance in evaluating LLM agents without adequate consideration for cost?\n- With eval-driven development, how do subjective evaluations affect large-scale acceptance and trust in AI-generated outputs?\nAUDIENCE CONTEXT: AI developers, researchers, and data scientists are deeply invested in eval-driven development for its potential to increase the reliability and efficiency of LLMs as they transition into mainstream applications.",
+  "selected_angles": [
+    {
+      "angle_text": "Imagine AI as a courtroom where LLMs judge and refine their own outputs, marking a shift towards eval-driven development.",
+      "angle_type": "NARRATIVE",
+      "hook_strength": 8,
+      "defensibility": 7,
+      "originality": 8,
+      "shareability": 8,
+      "thesis_fidelity": 7,
+      "total_score": 38,
+      "selected": true
+    }
+  ],
+  "fact_check_results": [
+    {
+      "claim_text": "eval-driven development (EDD) can reduce AI errors by up to 25%",
+      "claim_type": "statistic",
+      "verified": false,
+      "action": "soften",
+      "rag_status": "not_found",
+      "rag_confidence": 0.7,
+      "rag_evidence": "",
+      "web_status": "unverifiable",
+      "web_evidence": "The search results provided discuss the reduction of diagnostic errors and cognitive biases due to AI tools in medical settings but do not specifically mention eval-driven development (EDD) or quantify a reduction in AI errors by any percentage."
+    },
+    {
+      "claim_text": "Eval-driven development emphasizes defining success criteria first, much like test-driven development in software.",
+      "claim_type": "comparison",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "not_found",
+      "rag_confidence": 0.8,
+      "rag_evidence": "",
+      "web_status": "supported",
+      "web_evidence": "If you've worked with test-driven development (TDD), the structure feels familiar. But TDD tests return pass or fail based on an exact match. EDD scores outputs across multiple quality dimensions because a response can be factually accurate but too long, or well-formatted but missing key information."
+    },
+    {
+      "claim_text": "Today’s LLMs, like those in the MLflow framework, act as ‘judges,’ scoring outputs from 0 to 3.",
+      "claim_type": "statistic",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "supported",
+      "rag_confidence": 0.9,
+      "rag_evidence": "For example, an LLM can act as a “judge” to rate the relevance of semantic search results on a scale from 0 to 3, and these ratings can then guide model improvements in an iterative loop.",
+      "web_status": "unverifiable",
+      "web_evidence": ""
+    },
+    {
+      "claim_text": "models currently require up to 10 hours on an H100 GPU for constrained experiments",
+      "claim_type": "statistic",
+      "verified": false,
+      "action": "soften",
+      "rag_status": "not_found",
+      "rag_confidence": 0.8,
+      "rag_evidence": "",
+      "web_status": "unverifiable",
+      "web_evidence": "The search results provide information on the time limitations of experiments (5 minutes per experiment) and general model training durations across different model sizes. However, there is no specific information directly confirming or contradicting the claim of models requiring up to 10 hours on an H100 GPU for constrained experiments."
+    },
+    {
+      "claim_text": "Even enhanced models like Opus 4.6 achieve only a 25%-28% score compared to a human score of 51%",
+      "claim_type": "comparison",
+      "verified": false,
+      "action": "remove",
+      "rag_status": "not_found",
+      "rag_confidence": 0.9,
+      "rag_evidence": "",
+      "web_status": "contradicted",
+      "web_evidence": "Opus 4.6 scores 76% on the 8-needle 1M variant of MRCR v2, which indicates a higher performance than the claim of 25%-28% compared to a human score of 51%."
+    }
+  ],
+  "voice_review": {
+    "style_profile": {
+      "avg_sentence_length": 18,
+      "sentence_length_variance": "medium",
+      "vocabulary_level": "advanced",
+      "favorite_constructions": [
+        "parenthetical statements",
+        "colons",
+        "enumerated lists"
+      ],
+      "tone_markers": [
+        "objective",
+        "analytical",
+        "informative"
+      ],
+      "paragraph_length": "medium (3-4)",
+      "opening_style": "Starts with a direct statement or observation",
+      "closing_style": "Summarizes key points or provides a forward-looking statement",
+      "punctuation_habits": [
+        "frequent use of colons and semicolons",
+        "occasional parenthetical asides"
+      ],
+      "formality_level": 8,
+      "humor_frequency": "none"
+    },
+    "voice_match_score": 0.8,
+    "adjustments_made": [
+      "Rephrased the question in segment 1 for a more direct engagement.",
+      "Enhanced parallel structure in segment 2 for better flow.",
+      "Switched sentence order in segment 3 for logical progression.",
+      "Used 'Focusing' instead of 'concentrating' in segment 4 to match formality.",
+      "Replaced 'align with expectations' with 'meet expectations' in segment 6 for clarity.",
+      "Added 'necessitating transparency and equity' in segment 7 for emphasis.",
+      "Concluded segment 8 with a forward-looking statement in line with the author's style.",
+      "Removed the phrase 'revolutionizing'",
+      "Condensed redundant phrases and tightened language to meet character limit while maintaining required claims"
+    ],
+    "char_count": 1328,
+    "word_count": 181,
+    "length_ratio": 0.861,
+    "length_in_bounds": false,
+    "structurally_clean": true,
+    "residual_violations": [],
+    "length_fix_attempted": true,
+    "kept_claims_total": 2,
+    "kept_claims_preserved": 2,
+    "missing_kept_claims": [],
+    "restoration_attempted": false
+  },
+  "final_content": "1/ **Are you aware that eval-driven development (EDD) enhances the robustness of AI systems?** Focusing on evaluation rather than only on data transforms the creation of intelligent, dependable AI agents. 2/ Eval-driven development emphasizes defining success criteria first, akin to test-driven development in software. It drives advancements through iterative improvements. [applydata.io] 3/ Today’s LLMs, like those in the MLflow framework, act as ‘judges,’ scoring outputs from 0 to 3, guiding models toward refinement. [applydata.io] 4/ However, focusing exclusively on performance evaluation might elevate costs, as models often need substantial time on advanced GPUs like the H100 for restricted experiments. [ImportAI 449] 5/ A persistent challenge is the potential misalignment between automated evaluations and human judgment, leading to unreliable outcomes. [Document 1] 6/ Despite faster evaluations, human oversight is critical to ensure automated assessments meet expectations, enhancing model efficacy. [Anthropic data] 7/ Emerging institutions could act as ‘courtrooms’ for AI governance, necessitating transparency and equity to address AI's societal impact. [arXiv] 8/ As AI develops, so must its evaluation mechanisms. Eval-driven development is key to fostering systematically accountable LLMs and AI agents.",
+  "assessment": {
+    "structural": [
+      {
+        "check": "all_nodes_fired",
+        "pass": true,
+        "detail": "missing: none"
+      },
+      {
+        "check": "all_llm_nodes_have_tokens",
+        "pass": true,
+        "detail": "zero-token nodes: none"
+      },
+      {
+        "check": "final_non_empty",
+        "pass": true,
+        "detail": "1328 chars"
+      },
+      {
+        "check": "no_encoding_noise",
+        "pass": true,
+        "detail": "clean"
+      },
+      {
+        "check": "no_emoji",
+        "pass": true,
+        "detail": "none"
+      },
+      {
+        "check": "no_hashtags",
+        "pass": true,
+        "detail": "none"
+      },
+      {
+        "check": "thread_min_segments",
+        "pass": true,
+        "detail": "8 segments (min 4)"
+      },
+      {
+        "check": "thread_segments_within_280",
+        "pass": true,
+        "detail": "over-limit segments: none"
+      },
+      {
+        "check": "no_structural_violations",
+        "pass": true,
+        "detail": "0 violation(s)"
+      },
+      {
+        "check": "voice_length_in_bounds",
+        "pass": false,
+        "detail": "ratio 0.861, 1328 chars"
+      },
+      {
+        "check": "kept_claims_preserved",
+        "pass": true,
+        "detail": "0 missing"
+      }
+    ],
+    "slop": {
+      "slop_phrases": [],
+      "hedge_phrases": [],
+      "slop_count": 0,
+      "hedge_count": 0,
+      "clean": true
+    },
+    "judge": {
+      "insight_density": 6,
+      "originality": 5,
+      "hook_strength": 5,
+      "authentic_voice": 4,
+      "clarity": 6,
+      "overall": 5,
+      "one_line_verdict": "The thread offers decent insights but lacks originality and a strong, authentic voice."
+    }
+  }
+}

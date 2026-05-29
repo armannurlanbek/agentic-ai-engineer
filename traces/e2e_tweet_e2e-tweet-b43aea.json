@@ -1,0 +1,281 @@
+{
+  "case": {
+    "name": "tweet",
+    "content_type": "tweet",
+    "user_topic": "Why most production AI agents fail on reliability, not capability",
+    "note": "RAG-hit (corpus deep on agents) + voice samples from corpus"
+  },
+  "run_id": "e2e-tweet-b43aea",
+  "wall_ms": 45570,
+  "trace_summary": {
+    "total_duration_ms": 45565.94,
+    "total_tokens": 25661,
+    "total_llm_calls": 8
+  },
+  "traces": [
+    {
+      "node_name": "discovery",
+      "started_at": 1780028443.0721238,
+      "finished_at": 1780028455.1572306,
+      "duration_ms": 12085.11,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "TOPIC: AI production agents often fail on reliability rather than capability.\nCONTENT TYPE: tweet\nKEY FACTS:\n- OpenAI has unveiled a suite of tools to simplify AI agent production, marking a 'signific...",
+      "prompt_tokens": 2524,
+      "completion_tokens": 284,
+      "total_tokens": 2808,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "retrieval",
+      "started_at": 1780028455.1582358,
+      "finished_at": 1780028457.058143,
+      "duration_ms": 1899.91,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "['voice_samples', 'rag_context']",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "angle",
+      "started_at": 1780028457.059139,
+      "finished_at": 1780028463.9738207,
+      "duration_ms": 6914.68,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "['all_angles', 'selected_angles', 'angle_strategy_note']",
+      "prompt_tokens": 3715,
+      "completion_tokens": 526,
+      "total_tokens": 4241,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "draft_writer",
+      "started_at": 1780028463.9738207,
+      "finished_at": 1780028465.9608822,
+      "duration_ms": 1987.06,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "AI production feels like building with shifting Legos—OpenAI's tools aim for stability, but 3-15% tool-call failures reveal the challenge in providing reliable systems. Can we build future-ready AI wi...",
+      "prompt_tokens": 4089,
+      "completion_tokens": 45,
+      "total_tokens": 4134,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "critic",
+      "started_at": 1780028465.9618807,
+      "finished_at": 1780028469.257062,
+      "duration_ms": 3295.18,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "['critic_verdict', 'draft_passed', 'critic_feedback_history']",
+      "prompt_tokens": 631,
+      "completion_tokens": 328,
+      "total_tokens": 959,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "draft_writer",
+      "started_at": 1780028469.257062,
+      "finished_at": 1780028470.2494812,
+      "duration_ms": 992.42,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "Building AI is like assembling on quicksand—OpenAI's tools push boundaries, but with 3-15% of tool-calls failing, stability remains elusive. Can AI ever be future-proof and rock-solid?",
+      "prompt_tokens": 4297,
+      "completion_tokens": 43,
+      "total_tokens": 4340,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "critic",
+      "started_at": 1780028470.2504783,
+      "finished_at": 1780028475.722984,
+      "duration_ms": 5472.51,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "['critic_verdict', 'draft_passed', 'critic_feedback_history']",
+      "prompt_tokens": 629,
+      "completion_tokens": 292,
+      "total_tokens": 921,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "fact_checker",
+      "started_at": 1780028475.7239842,
+      "finished_at": 1780028483.3018255,
+      "duration_ms": 7577.84,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "['fact_check_results', 'post_factcheck_draft']",
+      "prompt_tokens": 3798,
+      "completion_tokens": 308,
+      "total_tokens": 4106,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "voice_reviewer",
+      "started_at": 1780028483.303825,
+      "finished_at": 1780028488.6380687,
+      "duration_ms": 5334.24,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "Constructing AI is akin to building on quicksand; although OpenAI's tools are at the forefront of pushing conceptual boundaries, stability remains a challenge as there are reports of tool-call failure...",
+      "prompt_tokens": 3793,
+      "completion_tokens": 359,
+      "total_tokens": 4152,
+      "error": null,
+      "metadata": {}
+    }
+  ],
+  "draft_iteration": 2,
+  "draft_passed": false,
+  "selected_topic_summary": "TOPIC: AI production agents often fail on reliability rather than capability.\nCONTENT TYPE: tweet\nKEY FACTS:\n- OpenAI has unveiled a suite of tools to simplify AI agent production, marking a 'significant leap for production-ready AI.' (source: LinkedIn)\n- Tool calling by AI agents in production fails 3% to 15% of the time. (source: Medium)\n- With every rebuild, teams lose continuity as the AI tech stack shifts faster than standardization can keep up. (source: cleanlab.ai)\nTENSIONS:\n- While OpenAI and other tech giants innovate on AI capabilities, practitioners argue reliability remains the critical challenge, especially in fully automated systems. (sources: Fortune, LinkedIn)\nANGLE SEEDS:\n- AI agents are speeding ahead in capability, but reliability is the hurdle that production teams can't ignore.\n- Behind every AI breakthrough, there's an undercurrent risk of reliability failures that can't be seen from the surface.\nAUDIENCE CONTEXT: Tech leaders and engineers focused on deploying AI solutions are closely watching these trends, as the balance between capability and reliability directly impacts their operational success and strategic decisions.",
+  "selected_angles": [
+    {
+      "angle_text": "AI production resembles building with shifting Legos, complicating continuity and reliability more than initial breakthroughs.",
+      "angle_type": "NARRATIVE",
+      "hook_strength": 9,
+      "defensibility": 7,
+      "originality": 8,
+      "shareability": 9,
+      "total_score": 33,
+      "selected": true
+    }
+  ],
+  "fact_check_results": [
+    {
+      "claim_text": "OpenAI's tools push boundaries",
+      "claim_type": "attribution",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "supported",
+      "rag_confidence": 0.8,
+      "rag_evidence": "OpenAI also published more technical platform detail, including a Windows sandbox design write-up describing the combination of local users, firewall rules, ACLs, write-restricted tokens, DPAPI, and helper executables needed to safely run coding agents with local filesystem/tool access.",
+      "web_status": "unverifiable",
+      "web_evidence": ""
+    },
+    {
+      "claim_text": "3-15% of tool-calls failing",
+      "claim_type": "statistic",
+      "verified": false,
+      "action": "soften",
+      "rag_status": "not_found",
+      "rag_confidence": 0.8,
+      "rag_evidence": "",
+      "web_status": "unverifiable",
+      "web_evidence": "None of the search results provide specific statistics on the failure rate percentage of tool-calls. They indicate occasional failures and general issues but do not quantify these failures in terms of a specific percentage as claimed."
+    }
+  ],
+  "voice_review": {
+    "style_profile": {
+      "avg_sentence_length": 28,
+      "sentence_length_variance": "medium",
+      "vocabulary_level": "advanced",
+      "favorite_constructions": [
+        "comparative assertions",
+        "contrasting ideas",
+        "analytical explanations",
+        "insights from experience"
+      ],
+      "tone_markers": [
+        "analytical",
+        "informative",
+        "reflective",
+        "strategic",
+        "cautionary"
+      ],
+      "paragraph_length": "long (5+)",
+      "opening_style": "Introduces main thesis or concept aligned with academic or industry context",
+      "closing_style": "Summarizes key insights or offers strategic advice, typically reflective or forward-looking",
+      "punctuation_habits": [
+        "frequent use of commas for complex clauses",
+        "use of colons and dashes for emphasis",
+        "occasional quotation marks for citations or emphasis"
+      ],
+      "formality_level": 8,
+      "humor_frequency": "rare"
+    },
+    "voice_match_score": 0.7,
+    "adjustments_made": [
+      "introduced a semicolon for a smoother flow in the initial comparison",
+      "added emphasis to instability with the phrase 'persistent instability'",
+      "rephrased the closing question to align with a reflective tone"
+    ],
+    "length_ratio": 1.728,
+    "length_in_bounds": false,
+    "kept_claims_total": 1,
+    "kept_claims_preserved": 1,
+    "missing_kept_claims": [],
+    "restoration_attempted": false
+  },
+  "final_content": "Constructing AI is akin to building on quicksand; although OpenAI's tools are at the forefront of pushing conceptual boundaries, stability remains a challenge as there are reports of tool-call failures recorded during the development process. This persistent instability raises a crucial question: Is it feasible for AI to ever reach a state of being future-proof and unassailably solid?",
+  "assessment": {
+    "structural": [
+      {
+        "check": "all_nodes_fired",
+        "pass": true,
+        "detail": "missing: none"
+      },
+      {
+        "check": "all_llm_nodes_have_tokens",
+        "pass": true,
+        "detail": "zero-token nodes: none"
+      },
+      {
+        "check": "final_non_empty",
+        "pass": true,
+        "detail": "387 chars"
+      },
+      {
+        "check": "no_encoding_noise",
+        "pass": true,
+        "detail": "clean"
+      },
+      {
+        "check": "no_emoji",
+        "pass": true,
+        "detail": "none"
+      },
+      {
+        "check": "no_hashtags",
+        "pass": true,
+        "detail": "none"
+      },
+      {
+        "check": "within_280_chars",
+        "pass": false,
+        "detail": "387 chars"
+      },
+      {
+        "check": "voice_length_in_bounds",
+        "pass": false,
+        "detail": "ratio 1.728"
+      },
+      {
+        "check": "kept_claims_preserved",
+        "pass": true,
+        "detail": "0 missing"
+      }
+    ],
+    "slop": {
+      "slop_phrases": [],
+      "hedge_phrases": [],
+      "slop_count": 0,
+      "hedge_count": 0,
+      "clean": true
+    },
+    "judge": {
+      "insight_density": 6,
+      "originality": 5,
+      "hook_strength": 5,
+      "authentic_voice": 6,
+      "clarity": 5,
+      "overall": 5,
+      "one_line_verdict": "Insight is decent, but lacks originality and a strong hook."
+    }
+  }
+}

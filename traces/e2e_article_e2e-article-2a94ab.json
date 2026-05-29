@@ -1,0 +1,436 @@
+{
+  "case": {
+    "name": "article",
+    "content_type": "article",
+    "user_topic": "The economics of specialty coffee sourcing and why direct-trade margins are misunderstood",
+    "note": "RAG-MISS (non-AI topic) — tests graceful degradation + fact-checker web fallback"
+  },
+  "run_id": "e2e-article-2a94ab",
+  "wall_ms": 217647,
+  "trace_summary": {
+    "total_duration_ms": 217642.87,
+    "total_tokens": 96207,
+    "total_llm_calls": 10
+  },
+  "traces": [
+    {
+      "node_name": "discovery",
+      "started_at": 1780032821.3385763,
+      "finished_at": 1780032842.886615,
+      "duration_ms": 21548.04,
+      "input_summary": "The economics of specialty coffee sourcing and why direct-trade margins are misunderstood",
+      "output_summary": "TOPIC: The economics of specialty coffee sourcing and why direct-trade margins are misunderstood\nCONTENT TYPE: article\nKEY FACTS:\n- Industry experts predict that specialty coffee prices will continue ...",
+      "prompt_tokens": 1866,
+      "completion_tokens": 659,
+      "total_tokens": 2525,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "retrieval",
+      "started_at": 1780032842.8876138,
+      "finished_at": 1780032844.6957083,
+      "duration_ms": 1808.09,
+      "input_summary": "The economics of specialty coffee sourcing and why direct-trade margins are misunderstood",
+      "output_summary": "['voice_samples', 'rag_context']",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "angle",
+      "started_at": 1780032844.6967094,
+      "finished_at": 1780032854.3434052,
+      "duration_ms": 9646.7,
+      "input_summary": "The economics of specialty coffee sourcing and why direct-trade margins are misunderstood",
+      "output_summary": "['all_angles', 'selected_angles', 'angle_strategy_note']",
+      "prompt_tokens": 4921,
+      "completion_tokens": 1115,
+      "total_tokens": 6036,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "draft_writer",
+      "started_at": 1780032854.344409,
+      "finished_at": 1780032883.8434622,
+      "duration_ms": 29499.05,
+      "input_summary": "The economics of specialty coffee sourcing and why direct-trade margins are misunderstood",
+      "output_summary": "# The Economics of Specialty Coffee Sourcing and Why Direct-Trade Margins Are Misunderstood\n\nThe pursuit of specialty coffee sourcing is a sophisticated dance that captivates many—from coffee enthusia...",
+      "prompt_tokens": 8574,
+      "completion_tokens": 3014,
+      "total_tokens": 11588,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "critic",
+      "started_at": 1780032883.8454576,
+      "finished_at": 1780032889.555649,
+      "duration_ms": 5710.19,
+      "input_summary": "The economics of specialty coffee sourcing and why direct-trade margins are misunderstood",
+      "output_summary": "['critic_verdict', 'draft_passed', 'critic_feedback_history']",
+      "prompt_tokens": 2572,
+      "completion_tokens": 549,
+      "total_tokens": 3121,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "draft_writer",
+      "started_at": 1780032889.5586483,
+      "finished_at": 1780032915.0942795,
+      "duration_ms": 25535.63,
+      "input_summary": "The economics of specialty coffee sourcing and why direct-trade margins are misunderstood",
+      "output_summary": "# The Economics of Specialty Coffee Sourcing and Why Direct-Trade Margins Are Misunderstood\n\nSpecialty coffee sourcing intrigues stakeholders across the spectrum—from roasters and coffee enthusiasts t...",
+      "prompt_tokens": 10271,
+      "completion_tokens": 2511,
+      "total_tokens": 12782,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "critic",
+      "started_at": 1780032915.0942795,
+      "finished_at": 1780032920.9785037,
+      "duration_ms": 5884.22,
+      "input_summary": "The economics of specialty coffee sourcing and why direct-trade margins are misunderstood",
+      "output_summary": "['critic_verdict', 'draft_passed', 'critic_feedback_history']",
+      "prompt_tokens": 2405,
+      "completion_tokens": 439,
+      "total_tokens": 2844,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "draft_writer",
+      "started_at": 1780032920.984507,
+      "finished_at": 1780032958.479911,
+      "duration_ms": 37495.4,
+      "input_summary": "The economics of specialty coffee sourcing and why direct-trade margins are misunderstood",
+      "output_summary": "# The Economics of Direct Trade in Specialty Coffee\n\nIn the world of specialty coffee, direct trade is often misconceived as a model burdened with high costs. However, these expenses are, in reality, ...",
+      "prompt_tokens": 10428,
+      "completion_tokens": 3000,
+      "total_tokens": 13428,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "critic",
+      "started_at": 1780032958.4809103,
+      "finished_at": 1780032963.9637167,
+      "duration_ms": 5482.81,
+      "input_summary": "The economics of specialty coffee sourcing and why direct-trade margins are misunderstood",
+      "output_summary": "['critic_verdict', 'draft_passed', 'critic_feedback_history']",
+      "prompt_tokens": 2507,
+      "completion_tokens": 495,
+      "total_tokens": 3002,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "fact_checker",
+      "started_at": 1780032963.9657147,
+      "finished_at": 1780033012.2009683,
+      "duration_ms": 48235.25,
+      "input_summary": "The economics of specialty coffee sourcing and why direct-trade margins are misunderstood",
+      "output_summary": "['fact_check_results', 'post_factcheck_draft']",
+      "prompt_tokens": 26117,
+      "completion_tokens": 3607,
+      "total_tokens": 29724,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "voice_reviewer",
+      "started_at": 1780033012.201966,
+      "finished_at": 1780033038.981449,
+      "duration_ms": 26779.48,
+      "input_summary": "The economics of specialty coffee sourcing and why direct-trade margins are misunderstood",
+      "output_summary": "# The Economics of Direct Trade in Specialty Coffee\n\nDirect trade in specialty coffee is often wrongly viewed as costly when these expenses should be investments in quality and sustainability. This ar...",
+      "prompt_tokens": 8191,
+      "completion_tokens": 2966,
+      "total_tokens": 11157,
+      "error": null,
+      "metadata": {}
+    }
+  ],
+  "draft_iteration": 3,
+  "draft_passed": false,
+  "selected_topic_summary": "TOPIC: The economics of specialty coffee sourcing and why direct-trade margins are misunderstood\nCONTENT TYPE: article\nKEY FACTS:\n- Industry experts predict that specialty coffee prices will continue to rise through 2025, with a slower rate expected as the market adjusts. (source: intrepidcoffeeco.com)\n- The specialty coffee market is projected to grow from USD 80.47 billion in 2024 to USD 178.67 billion in 2032, with a CAGR of 9.77%. (source: credenceresearch.com)\n- Direct trade, while offering transparency and fairer prices, can also limit supply and involve higher costs to ensure quality. (source: delafincacoffee.com)\n- Historic high coffee prices in 2025 have placed unprecedented pressure on roasters' margins. (source: perfectdailygrind.com)\n- The U.S. specialty coffee market is expected to grow at a CAGR of 9.5% from 2025 to 2030. (source: grandviewresearch.com)\n- Small coffee roasters face challenges due to the 2025 price surge and supply chain disruptions, emphasizing local consumer support. (source: peachcoffeeroasters.com)\n- Relationship-based sourcing in direct trade is being challenged by high cost environments, leading to a balancing act between philosophy and financial sustainability. (source: coffeecrafters.com)\nTENSIONS:\n- The balance between cost efficiency and maintaining direct trade relationships is under pressure from the rising costs in the specialty coffee sector. (source: coffeecrafters.com)\n- While direct trade is praised for transparency and fair prices, it's criticized for potential supply limitations and higher associated costs. (source: delafincacoffee.com)\n- There is a debate on whether increased prices in the specialty coffee market justify the need for direct trade compared to commodity and certified coffees. (source: mdpi.com)\nANGLE SEEDS:\n- Despite its challenges, direct trade should be viewed not just as a cost center but as an investment in long-term quality and sustainability.\n- Can the growing consumer demand for ethical sourcing and premium taste in specialty coffee sustain the direct trade model despite rising costs?\n- As coffee prices soar, are consumers willing to pay more for direct trade coffee, knowing it's often a premium product associated with higher costs?\n- Is the pressure on margins forcing a rethink of the direct trade model in the specialty coffee market, or can it adapt to a high-cost future?\nAUDIENCE CONTEXT: Coffee enthusiasts, specialty coffee roasters, industry analysts, and ethical consumer advocates are deeply invested in understanding the economics of specialty coffee and the real costs and benefits of direct trade relationships, especially in a time of rising prices and economic pressure.",
+  "selected_angles": [
+    {
+      "angle_text": "Despite rising costs, direct trade coffee sourcing is an investment in quality and sustainability, not merely a financial burden.",
+      "angle_type": "CONTRARIAN",
+      "hook_strength": 8,
+      "defensibility": 8,
+      "originality": 7,
+      "shareability": 8,
+      "thesis_fidelity": 9,
+      "total_score": 40,
+      "selected": true
+    }
+  ],
+  "fact_check_results": [
+    {
+      "claim_text": "coffee prices are projected to increase through 2025",
+      "claim_type": "statistic",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "not_found",
+      "rag_confidence": 0.9,
+      "rag_evidence": "",
+      "web_status": "supported",
+      "web_evidence": "Coffee's Cost Surge in 2025: Adapting to Accelerating Costs | Fratello Coffee - The anticipated global supply shortfall is a central concern moving into 2025. Brazil's depleted inventories and projected smaller arabica crop are expected to create a substantial gap in the global coffee supply."
+    },
+    {
+      "claim_text": "the specialty coffee market is expected to grow to $178.67 billion by 2032",
+      "claim_type": "statistic",
+      "verified": false,
+      "action": "remove",
+      "rag_status": "not_found",
+      "rag_confidence": 0.9,
+      "rag_evidence": "",
+      "web_status": "contradicted",
+      "web_evidence": "The reports indicate that the specialty coffee market is expected to reach between USD 59.46 billion to USD 80.1 billion by 2032, which is significantly lower than the claimed USD 178.67 billion."
+    },
+    {
+      "claim_text": "(credenceresearch.com)",
+      "claim_type": "attribution",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "not_found",
+      "rag_confidence": 0.7,
+      "rag_evidence": "",
+      "web_status": "supported",
+      "web_evidence": "Asia Pacific is the fastest-growing region in the Specialty Coffee Retail Packaged Goods market, holding about 22% of the global market share in 2024. The market expanded from USD 3,284.1 million in 2018 to USD 5,374.9 million in 2024 and is forecasted to reach USD 10,634.8 million by 2032, registering a CAGR of 7.8%."
+    },
+    {
+      "claim_text": "coffee prices can stress financial margins (perfectdailygrind.com)",
+      "claim_type": "attribution",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "not_found",
+      "rag_confidence": 0.8,
+      "rag_evidence": "",
+      "web_status": "supported",
+      "web_evidence": "The surge in coffee prices has had ripple effects throughout the supply chain. Roasters and traders are feeling the immediate impacts. Many rely on short-term loans to cover the costs of large coffee purchases..."
+    },
+    {
+      "claim_text": "The U.S. specialty coffee market is predicted to grow at a CAGR of 9.5% from 2025 to 2030",
+      "claim_type": "statistic",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "not_found",
+      "rag_confidence": 0.9,
+      "rag_evidence": "",
+      "web_status": "supported",
+      "web_evidence": "The U.S. specialty coffee market size is anticipated to reach USD 81.8 billion by 2030 and is projected to grow at a CAGR of 9.5% from 2025 to 2030, according to a new report by Grand View Research, Inc."
+    },
+    {
+      "claim_text": "(grandviewresearch.com)",
+      "claim_type": "attribution",
+      "verified": false,
+      "action": "soften",
+      "rag_status": "not_found",
+      "rag_confidence": 0.8,
+      "rag_evidence": "",
+      "web_status": "unverifiable",
+      "web_evidence": "The search results provide data on the growth and size of the specialty coffee and coffee markets in general, but do not specifically mention or confirm details from grandviewresearch.com."
+    },
+    {
+      "claim_text": "small roasters must rethink their strategies, focusing on community support and operational efficiency (peachcoffeeroasters.com)",
+      "claim_type": "attribution",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "not_found",
+      "rag_confidence": 0.9,
+      "rag_evidence": "",
+      "web_status": "supported",
+      "web_evidence": "This community-first approach has led to: Key Business Takeaway: Build your growth strategy around genuine community engagement. This creates a stable foundation for expansion while building brand loyalty."
+    },
+    {
+      "claim_text": "Balancing direct trade relationships with rising costs forces businesses to confront their philosophical commitments versus financial realities (coffeecrafters.com)",
+      "claim_type": "attribution",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "not_found",
+      "rag_confidence": 0.85,
+      "rag_evidence": "",
+      "web_status": "supported",
+      "web_evidence": "Producers who embrace direct relationships with farmers gain more than supply security — they gain insight. These practices fall under the umbrella of sustainable coffee farming, ensuring both environmental and economic resilience."
+    },
+    {
+      "claim_text": "advocating for direct trade's viability is crucial",
+      "claim_type": "causal",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "not_found",
+      "rag_confidence": 0.8,
+      "rag_evidence": "",
+      "web_status": "supported",
+      "web_evidence": "Direct trade coffee benefits farmers by providing higher-than-market wages, funding improvements to farm infrastructure, and offering technical support to refine processing methods. These resources increase farm income stability and support community development projects, leading to tangible improvements beyond standard commodity sales."
+    },
+    {
+      "claim_text": "The model offers intangible benefits—such as community empowerment and improved agricultural practices",
+      "claim_type": "causal",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "not_found",
+      "rag_confidence": 0.8,
+      "rag_evidence": "",
+      "web_status": "supported",
+      "web_evidence": "Direct trade coffee benefits both farmers and consumers by linking financial rewards with quality and sustainability. Farmers receive higher incomes, expert support, and better market access...when farmers are rewarded for exceptional beans, they invest more in agroforestry and processing methods. Direct trade offers a way to create a more equitable and sustainable coffee industry, where farmers receive fair compensation, consumers enjoy high-quality coffee, and relationships between buyers and "
+    },
+    {
+      "claim_text": "price increases by 2025 require a strategic response from roasters",
+      "claim_type": "causal",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "supported",
+      "rag_confidence": 0.8,
+      "rag_evidence": "Industry experts predict that specialty coffee prices will continue to rise through 2025, though perhaps at a sl",
+      "web_status": "unverifiable",
+      "web_evidence": ""
+    },
+    {
+      "claim_text": "Technological advancements, such as blockchain and AI-driven analytics, enhance supply chain transparency and efficiency",
+      "claim_type": "causal",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "supported",
+      "rag_confidence": 0.7,
+      "rag_evidence": "A bunch of people have used the blockchain to coordinate the distributed training run of a 72B parameter model which matches the performance of LLaMA2.",
+      "web_status": "unverifiable",
+      "web_evidence": ""
+    },
+    {
+      "claim_text": "AI can aid in developing adaptive strategies that ensure resilience and production stability",
+      "claim_type": "causal",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "not_found",
+      "rag_confidence": 0.65,
+      "rag_evidence": "",
+      "web_status": "supported",
+      "web_evidence": "Source: [PDF] AI-driven Transformation in Coffee Agribusiness - AI’s potential, ensure technological progress while promote environmental management and economic resilience. Moreover, Table 3 acts as a valuable resource, steering research efforts toward meaningful and impactful outcomes, fostering industry growth and resilience within an increasingly complex global landscape."
+    }
+  ],
+  "voice_review": {
+    "style_profile": {
+      "avg_sentence_length": 21,
+      "sentence_length_variance": "medium",
+      "vocabulary_level": "advanced",
+      "favorite_constructions": [
+        "conditional clauses",
+        "parentheses for clarification",
+        "compound sentences"
+      ],
+      "tone_markers": [
+        "analytical",
+        "informative",
+        "reflective"
+      ],
+      "paragraph_length": "long (5+)",
+      "opening_style": "contextual setup or background information",
+      "closing_style": "reflective or speculative conclusion",
+      "punctuation_habits": [
+        "frequent use of commas",
+        "occasional use of semicolons",
+        "use of dashes for emphasis"
+      ],
+      "formality_level": 7,
+      "humor_frequency": "rare"
+    },
+    "voice_match_score": 0.6,
+    "adjustments_made": [
+      "Broke long sentences into shorter pairings for better readability",
+      "Rephrased complex sentence structures to match author's analytical tone",
+      "Incorporated em-dash asides and parentheses for added clarity and emphasis",
+      "Substituted 'use' for 'utilize' to simplify language",
+      "Adjusted introductory and concluding segments to match the author's preference for contextual setups and reflective endings",
+      "Standardized punctuation, including the use of frequent commas and occasional semicolons",
+      "Preserved necessary claims with precision while adjusting surrounding text for style and flow",
+      "Removed redundant phrases and sections",
+      "Condensed explanations to reduce length",
+      "Eliminated repetitive language",
+      "Maintained all necessary specific claims"
+    ],
+    "char_count": 5728,
+    "word_count": 725,
+    "length_ratio": 0.566,
+    "length_in_bounds": false,
+    "structurally_clean": false,
+    "residual_violations": [
+      "Under length for article: 725 words, floor is 1200. Expand with concrete detail from KEY FACTS / KNOWLEDGE CONTEXT — do not pad with filler."
+    ],
+    "length_fix_attempted": true,
+    "kept_claims_total": 6,
+    "kept_claims_preserved": 6,
+    "missing_kept_claims": [],
+    "restoration_attempted": false
+  },
+  "final_content": "# The Economics of Direct Trade in Specialty Coffee\n\nDirect trade in specialty coffee is often wrongly viewed as costly when these expenses should be investments in quality and sustainability. This article clarifies the misunderstood margins of direct trade, beyond the simple view of it as a financial burden.\n\nCoffee prices are projected to increase through 2025 (credenceresearch.com), with the U.S. specialty coffee market expected to grow at a CAGR of 9.5% from 2025 to 2030. This presents challenges, especially for small roasters balancing ethical practices and rising costs.\n\n## Reassessing Direct Trade\n\nDirect trade emphasizes transparency, quality, and sustainability, beyond financial expenditure. Critics overlook broader goals like fair compensation and better farming techniques. Rising prices can stress financial margins (perfectdailygrind.com), but they also drive innovation, urging balance between costs and sustainability.\n\nDirect trade nurtures direct connections between roasters and growers, enhancing transparency and securing fair compensation, while fostering superior farming practices. These partnerships advance agricultural processes, resulting in better coffee quality and environmental sustainability.\n\n## Economic Fluctuations and Price Dynamics\n\nThe U.S. specialty coffee market's predicted growth attracts interest despite volatility. Small roasters must rethink strategies, focusing on community support and operational efficiency (peachcoffeeroasters.com). Price increases by 2025 require strategic responses to refine business models centered on efficiency and community.\n\nInnovations in logistics and nurturing local consumer bases can help alleviate financial pressures, aligning cost structures with market expectations.\n\n## Philosophy Meets Financial Reality\n\nBalancing direct trade with rising costs forces businesses to confront philosophical commitments versus financial realities (coffeecrafters.com). While traditional sourcing may offer lower costs, it lacks the depth of engagement intrinsic to direct trade.\n\nEmphasizing transparency and consumer education helps align operations with customer values, attracting consumers willing to pay a premium for ethically sourced products. Personalized supplier relationships, while financially challenging, embody ethical values through consumer education, creating loyal clientele invested in ethical sourcing.\n\n## Navigating Supply Chain Challenges\n\nSupply chain disruptions and the anticipated price hike by 2025 test the resilience of direct trade businesses. Reevaluating supplier networks and logistics is essential. Leveraging innovations like technology streamlines operations without compromising ethics, reinforcing direct trade's value.\n\nTechnological advancements, such as blockchain and AI-driven analytics, enhance supply chain transparency and efficiency. Blockchain assures authenticity while AI provides predictive insights for mitigating disruptions.\n\n## The Influence of Informed Consumers\n\nConsumer awareness, especially among those under 40, is crucial. Transparent communication and educational campaigns deepen loyalty, justifying higher direct trade costs and turning transactions into shared narratives.\n\nBrands that communicate ethical commitments capture younger, sustainability-driven consumers motivated by authentic corporate practices.\n\n## Justifying Direct Trade's Viability\n\nAdvocating for direct trade's viability is crucial. The model offers intangible benefits like community empowerment and improved agricultural practices, beyond profitability metrics. Brands should communicate these benefits, strengthening consumer loyalty.\n\nDirect trade empowers communities by investing directly in farms, boosting local economies and encouraging sustainable agriculture. Highlighting these benefits can lead consumers to become advocates for direct trade, contributing to industry reform focused on high-quality, responsibly sourced coffee.\n\n## Investment in Quality and Sustainability\n\nInvesting in direct trade means supporting quality and environmental sustainability, enhancing brand reputation amidst demand for high-quality and eco-friendly products.\n\nThe future of direct trade hinges on integrating technology with traditional methods. AI can streamline supply chains, enhancing quality control and reducing overheads. Innovations offer predictive tools for managing crop yields, optimizing logistics for greater efficiencies.\n\n## The Impact of Technology in Direct Trade\n\nAI's integration could transform the coffee industry by automating assessments and predicting yields, optimizing supply chains, reducing waste, and enhancing efficiency. As climate change impacts regions, AI aids in developing adaptive strategies for resilience and stability.\n\nAI also fosters transparency with solutions like blockchain, documenting a coffee bean's lifecycle, empowering informed consumer choices aligned with ethical sourcing initiatives.\n\n## Direct Trade's Future in a Global Context\n\nBalancing quality, sustainability, and profitability is key. Direct trade can be standard if stakeholders commit to innovation and education. AI-driven analytics and advanced farming techniques will play greater roles, potentially making direct trade common.\n\nAs the machine economy progresses, optimization promises efficiencies, narrowing the premium gap between direct trade and commodities. Policy frameworks should protect communities as technology becomes pivotal in agriculture.\n\nThe future of direct trade combines technological innovation with ethical practices, ensuring its success in an interconnected global economy. Direct trade offers insights beyond coffee, balancing profit with quality and sustainability.",
+  "assessment": {
+    "structural": [
+      {
+        "check": "all_nodes_fired",
+        "pass": true,
+        "detail": "missing: none"
+      },
+      {
+        "check": "all_llm_nodes_have_tokens",
+        "pass": true,
+        "detail": "zero-token nodes: none"
+      },
+      {
+        "check": "final_non_empty",
+        "pass": true,
+        "detail": "5728 chars"
+      },
+      {
+        "check": "no_encoding_noise",
+        "pass": true,
+        "detail": "clean"
+      },
+      {
+        "check": "article_word_band",
+        "pass": false,
+        "detail": "725 words (band 1200-3400)"
+      },
+      {
+        "check": "no_structural_violations",
+        "pass": false,
+        "detail": "1 violation(s): Under length for article: 725 words, floor is 1200. Expand with concrete detail from KEY FACTS / KNOWLEDGE CONTEXT — do not pad with filler."
+      },
+      {
+        "check": "voice_length_in_bounds",
+        "pass": false,
+        "detail": "ratio 0.566, 5728 chars"
+      },
+      {
+        "check": "kept_claims_preserved",
+        "pass": true,
+        "detail": "0 missing"
+      }
+    ],
+    "slop": {
+      "slop_phrases": [],
+      "hedge_phrases": [],
+      "slop_count": 0,
+      "hedge_count": 0,
+      "clean": true
+    },
+    "judge": {
+      "insight_density": 7,
+      "originality": 6,
+      "hook_strength": 5,
+      "authentic_voice": 6,
+      "clarity": 7,
+      "overall": 6,
+      "one_line_verdict": "Strong on insights and clarity but lacks a compelling hook and a distinct, authentic voice."
+    }
+  }
+}

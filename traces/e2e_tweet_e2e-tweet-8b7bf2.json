@@ -1,0 +1,288 @@
+{
+  "case": {
+    "name": "tweet",
+    "content_type": "tweet",
+    "user_topic": "Why most production AI agents fail on reliability, not capability",
+    "note": "RAG-hit (corpus deep on agents) + voice samples from corpus"
+  },
+  "run_id": "e2e-tweet-8b7bf2",
+  "wall_ms": 42397,
+  "trace_summary": {
+    "total_duration_ms": 42395.26,
+    "total_tokens": 29173,
+    "total_llm_calls": 8
+  },
+  "traces": [
+    {
+      "node_name": "discovery",
+      "started_at": 1780030014.2170827,
+      "finished_at": 1780030025.6735911,
+      "duration_ms": 11456.51,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "TOPIC: Why most production AI agents fail on reliability, not capability\nCONTENT TYPE: tweet\nKEY FACTS:\n- AI systems frequently crumble in real-world applications, with reliability being an afterthoug...",
+      "prompt_tokens": 1871,
+      "completion_tokens": 294,
+      "total_tokens": 2165,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "retrieval",
+      "started_at": 1780030025.6745949,
+      "finished_at": 1780030026.8301153,
+      "duration_ms": 1155.52,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "['voice_samples', 'rag_context']",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "angle",
+      "started_at": 1780030026.8311155,
+      "finished_at": 1780030033.3132818,
+      "duration_ms": 6482.17,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "['all_angles', 'selected_angles', 'angle_strategy_note']",
+      "prompt_tokens": 4119,
+      "completion_tokens": 601,
+      "total_tokens": 4720,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "draft_writer",
+      "started_at": 1780030033.315284,
+      "finished_at": 1780030035.1718783,
+      "duration_ms": 1856.59,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "Tech giants chase AI capability but neglect reliability, repeating a cycle of fast deployment and slow failure. Cleanlab.ai warns that rapid API evolution outpaces standardization, straining real-worl...",
+      "prompt_tokens": 4179,
+      "completion_tokens": 49,
+      "total_tokens": 4228,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "critic",
+      "started_at": 1780030035.1738758,
+      "finished_at": 1780030039.5260928,
+      "duration_ms": 4352.22,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "['critic_verdict', 'draft_passed', 'critic_feedback_history']",
+      "prompt_tokens": 646,
+      "completion_tokens": 386,
+      "total_tokens": 1032,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "draft_writer",
+      "started_at": 1780030039.5280957,
+      "finished_at": 1780030040.7092328,
+      "duration_ms": 1181.14,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "As tech giants race to deploy AI, they're skidding on reliability, risking costly failures. Cleanlab.ai warns fast-changing APIs hinder standardization, stressing systems. Is this sprint towards AI pu...",
+      "prompt_tokens": 4449,
+      "completion_tokens": 52,
+      "total_tokens": 4501,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "critic",
+      "started_at": 1780030040.7092328,
+      "finished_at": 1780030043.7011886,
+      "duration_ms": 2991.96,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "['critic_verdict', 'draft_passed', 'critic_feedback_history']",
+      "prompt_tokens": 650,
+      "completion_tokens": 346,
+      "total_tokens": 996,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "fact_checker",
+      "started_at": 1780030043.7027237,
+      "finished_at": 1780030052.888616,
+      "duration_ms": 9185.89,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "['fact_check_results', 'post_factcheck_draft']",
+      "prompt_tokens": 5628,
+      "completion_tokens": 506,
+      "total_tokens": 6134,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "node_name": "voice_reviewer",
+      "started_at": 1780030052.8896112,
+      "finished_at": 1780030056.6123474,
+      "duration_ms": 3722.74,
+      "input_summary": "Why most production AI agents fail on reliability, not capability",
+      "output_summary": "As tech giants rush to roll out AI, they're hitting reliability snags. Costly failures loom. Reports point to fast-changing APIs as a barrier to standardization. This stress on systems could drive us ...",
+      "prompt_tokens": 5084,
+      "completion_tokens": 313,
+      "total_tokens": 5397,
+      "error": null,
+      "metadata": {}
+    }
+  ],
+  "draft_iteration": 2,
+  "draft_passed": false,
+  "selected_topic_summary": "TOPIC: Why most production AI agents fail on reliability, not capability\nCONTENT TYPE: tweet\nKEY FACTS:\n- AI systems frequently crumble in real-world applications, with reliability being an afterthought, rather than a priority in deployment (source: Protocoding).\n- In production environments, faster detection of known pattern issues directly reduces maintenance costs and downtime impact (source: Resolve AI).\n- The agility of AI models can be detrimental; new frameworks and APIs emerge faster than organizations can standardize them, leading to reliability challenges (source: Cleanlab.ai).\nTENSIONS:\n- Balancing the need for AI capability development with the requirement for system reliability is debated, as focusing solely on one can compromise the other (source: Trust Insights).\nANGLE SEEDS:\n- The 'fast deployment, slow failure' cycle: AI's real challenge is surviving open environments, not just achieving high scores in labs.\n- As AI stacks evolve rapidly, can enterprises keep up and ensure both capability and reliability, or are they doomed to choose?\nAUDIENCE CONTEXT: Tech leaders and enterprise decision-makers are currently grappling with the challenges of integrating AI reliably in production settings to maintain consistency and drive business results.",
+  "selected_angles": [
+    {
+      "angle_text": "Tech giants prioritize AI capabilities over reliability, ignoring the 'fast deployment, slow failure' cycle that costs them more in downtime and maintenance.",
+      "angle_type": "CONTRARIAN",
+      "hook_strength": 8,
+      "defensibility": 9,
+      "originality": 7,
+      "shareability": 8,
+      "thesis_fidelity": 9,
+      "total_score": 41,
+      "selected": true
+    }
+  ],
+  "fact_check_results": [
+    {
+      "claim_text": "tech giants race to deploy AI",
+      "claim_type": "event",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "supported",
+      "rag_confidence": 0.9,
+      "rag_evidence": "US leaders (OpenAI, Anthropic, Google, with Meta/xAI joining) in the multi-gigawatt class; Chinese giants scaling from hundreds of MW toward multi-GW, increasingly on domestic stacks; and European contenders such as Mistral at around 90 MW today aiming for 1 GW by 2029",
+      "web_status": "unverifiable",
+      "web_evidence": ""
+    },
+    {
+      "claim_text": "they're skidding on reliability, risking costly failures",
+      "claim_type": "causal",
+      "verified": true,
+      "action": "keep",
+      "rag_status": "not_found",
+      "rag_confidence": 0.8,
+      "rag_evidence": "",
+      "web_status": "supported",
+      "web_evidence": "AI systems experience destabilization due to shifting inputs and external dependencies, which are not captured by traditional monitoring systems. This can lead to failures (InsightFinder). Furthermore, poor data quality, embedding drift, and output sensitivity are prominent reliability issues in AI systems, increasing the risk of failures (Monte Carlo). A steady decline in AI system reliability can lead to accidents in situations requiring increased system coupling (arXiv)."
+    },
+    {
+      "claim_text": "Cleanlab.ai warns fast-changing APIs hinder standardization",
+      "claim_type": "attribution",
+      "verified": false,
+      "action": "soften",
+      "rag_status": "not_found",
+      "rag_confidence": 0.7,
+      "rag_evidence": "",
+      "web_status": "unverifiable",
+      "web_evidence": "The search results do not provide any information regarding Cleanlab.ai's stance on fast-changing APIs and their impact on standardization."
+    }
+  ],
+  "voice_review": {
+    "style_profile": {
+      "avg_sentence_length": 11,
+      "sentence_length_variance": "high",
+      "vocabulary_level": "moderate",
+      "favorite_constructions": [
+        "direct claims",
+        "no hedging"
+      ],
+      "tone_markers": [
+        "confident",
+        "conversational"
+      ],
+      "paragraph_length": "n/a (single beat)",
+      "opening_style": "specific claim or surprising fact",
+      "closing_style": "memorable reframe",
+      "punctuation_habits": [
+        "periods over commas",
+        "no emojis"
+      ],
+      "formality_level": 4,
+      "humor_frequency": "rare"
+    },
+    "voice_match_score": 1.0,
+    "adjustments_made": [
+      "shortened 'race to deploy' to 'rush to roll out' for punchier rhythm",
+      "reversed sentence about reliability and failure for a staccato effect",
+      "swapped 'suggest' with 'point to' for directness",
+      "eliminated 'might' to maintain confident tone"
+    ],
+    "length_ratio": 0.921,
+    "length_in_bounds": true,
+    "kept_claims_total": 1,
+    "kept_claims_preserved": 1,
+    "missing_kept_claims": [],
+    "restoration_attempted": false
+  },
+  "final_content": "As tech giants rush to roll out AI, they're hitting reliability snags. Costly failures loom. Reports point to fast-changing APIs as a barrier to standardization. This stress on systems could drive us toward a reliability crisis. #AIFuturedCorells",
+  "assessment": {
+    "structural": [
+      {
+        "check": "all_nodes_fired",
+        "pass": true,
+        "detail": "missing: none"
+      },
+      {
+        "check": "all_llm_nodes_have_tokens",
+        "pass": true,
+        "detail": "zero-token nodes: none"
+      },
+      {
+        "check": "final_non_empty",
+        "pass": true,
+        "detail": "246 chars"
+      },
+      {
+        "check": "no_encoding_noise",
+        "pass": true,
+        "detail": "clean"
+      },
+      {
+        "check": "no_emoji",
+        "pass": true,
+        "detail": "none"
+      },
+      {
+        "check": "no_hashtags",
+        "pass": false,
+        "detail": "hashtag found"
+      },
+      {
+        "check": "within_280_chars",
+        "pass": true,
+        "detail": "246 chars"
+      },
+      {
+        "check": "voice_length_in_bounds",
+        "pass": true,
+        "detail": "ratio 0.921"
+      },
+      {
+        "check": "kept_claims_preserved",
+        "pass": true,
+        "detail": "0 missing"
+      }
+    ],
+    "slop": {
+      "slop_phrases": [],
+      "hedge_phrases": [],
+      "slop_count": 0,
+      "hedge_count": 0,
+      "clean": true
+    },
+    "judge": {
+      "insight_density": 4,
+      "originality": 3,
+      "hook_strength": 3,
+      "authentic_voice": 4,
+      "clarity": 5,
+      "overall": 4,
+      "one_line_verdict": "Poor originality and hook diminish the otherwise clear message; lacks deep insights."
+    }
+  }
+}

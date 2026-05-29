@@ -1,0 +1,223 @@
+---
+source: Latent Space
+source_slug: latent_space
+kind: context
+content_type: newsletter
+url: https://www.latent.space/p/ainews-new-ai-infra-decacorns-fireworks
+title: [AINews] New AI Infra decacorns: Fireworks, Baseten (with OpenRouter on the way)
+published: Wed, 27 May 2026 03:33:53 GMT
+---
+
+AINews: Weekday Roundups
+
+[AINews] New AI Infra decacorns: Fireworks, Baseten (with OpenRouter on the way)
+
+it's funding news, but it's good news. May 27, 2026 ∙ Paid 44 1 2 Share Take the 2026 AI Engineering Survey and get >$2k in credits and AIE WF tickets !
+
+Readers like when we report no news, but our second favorite to that is when we can simply reinforce a trend you should be aware of. In April we highlighted
+
+the Inference Inflection , and If today’s headline reminds you of last week’s headline , it is exactly the point we are making. [AINews] New AI Infra unicorns: Exa, Modal, TurboPuffer Latent.Space · May 22 Read full story
+
+With the pace of AI fundraising these days, our general policy is to only cover startups when they cross decacorn status (>$10B) - but only when confirmed, and today’s news of
+
+Fireworks’ $15B round (“in talks”, 3.75x in 7 months, our podcast here ) and Baseten’s $11B round
+
+(“is raising”, 2.2x in 3 months) is a bit premature, but the pace of the pickup in Inference land and unicorn to decacorn progression is too juicy not to serve as headline story today, with the
+
+$113M OpenRouter Series C
+
+(5x volume in 6 months) as the cherry on top: if you are gonna do multimodel inference, you are gonna need a router.
+
+OpenRouter @OpenRouter Today we’re announcing our $113M Series B led by @CapitalGVC.
+
+Over the last 6 months, weekly volume on OpenRouter grew from 5T to 25T tokens as AI rapidly shifts from experimentation into production.
+
+We’re excited for what comes next. 2:16 PM · May 26, 2026 · 224K Views 121 Replies · 114 Reposts · 2.14K Likes AI News for 5/23/2026-5/26/2026. We checked 12 subreddits, 544 Twitters and no further Discords. AINews’ website lets you search all past issues. As a reminder, AINews is now a section of Latent Space . You can opt in/out of email frequencies! AI Twitter Recap Agent Harnesses, Coding Benchmarks, and the Shift Beyond “Just the Model” Harness engineering is becoming the main differentiator for coding agents : Several posts converged on the same thesis: the winning stack is now model + harness + eval loop , not just a stronger base model. A long Zhihu summary argued that DeepSeek is explicitly building a harness team
+
+to close the loop between model outputs, runtime feedback, validation, and correction, with a claimed cached-input cost advantage that would support tighter interaction/verification loops. In parallel,
+
+Google’s Gemini Managed Agents guide
+
+framed agent infra as a single API call to a managed harness with sandboxing, persistence, and mounts, while
+
+LangChain’s updated create_agent docs and dair.ai’s “harness” paper summary formalized the same stack: context governance, trustworthy memory, dynamic skill routing . Benchmarks are getting closer to real developer experience : DeepSWE
+
+, introduced as a new benchmark for agentic coding, got strong endorsement from practitioners;
+
+@theo called it
+
+“the first code bench that actually aligns with how it feels to use these models coding.” It also created more separation at the top end than public SWE leaderboards often show. Related benchmark signals:
+
+Qwen3.7 Max debuted at #4 on Code Arena: Frontend , roughly on par with Claude Opus 4.6 on agentic webdev tasks, and Alibaba amplified the result . Across the tooling stack, Anthropic shipped a security-guidance plugin for Claude Code and reported a 30–40% reduction in security-related PR comments in internal use, while OpenAI highlighted GPT-5.5 in Codex at Databricks for more reliable document parsing. Research Agents, Long-Horizon Reasoning, and “Sleep” for Context Compression
+
+Math/science agents showed more evidence of capability overhang—conditional on the right harness
+
+: The strongest cluster of tweets was around models tackling old open problems. A mathematician reported
+
+Claude Mythos solving Erdős problem #90 , with follow-up detail that the model often converged to a different, cleaner proof path than OpenAI’s earlier route. This was echoed by @_sholtodouglas , @kimmonismus , and then sharpened by Sébastien Bubeck : with an appropriate harness , both Mythos and GPT-5.5
+
+can reproduce what an internal model had done one-shot, implying a large amount of latent capability not exposed by vanilla chat UX.
+
+Long-horizon memory is resurfacing as a core bottleneck : The paper “Language Models Need Sleep” got notable attention. The mechanism is a sleep-like consolidation phase
+
+where recent context is converted into persistent fast weights before clearing the KV cache, moving compute into an offline pass while preserving wake-time latency.
+
+dair.ai’s summary
+
+emphasized the systems angle: this is an alternative to ever-growing KV caches for agents with long trajectories. This theme connected neatly with ongoing discussion about memory systems in agents, including
+
+Omar’s pointer to Anthropic’s memory talk and Dream feature . Open deep-research agents and science forecasting also advanced : QUEST , a family of open 2B–35B
+
+models for long-horizon fact-seeking, citation grounding, and report synthesis, was released as a general-purpose deep research agent. On the science-evals side, Sakana/Stanford/Oxford/AI2’s
+
+CUSP benchmark
+
+found current models can often identify promising research directions but struggle much more with
+
+whether and when breakthroughs materialize. Model, Optimizer, and Architecture Updates
+
+Optimizer work remains lively, especially around Muon variants and schedule-free training
+
+: AMUSE proposes Anytime MUon with Stable gradient Evaluation
+
+, combining Muon with schedule-free-style gradient evaluation for stable anytime training without LR decay, reporting gains at
+
+124M / 720M / 1B
+
+scale and on ViT/ImageNet fine-tuning. Related implementation discussion came from
+
+ClashLuke’s SFMuon snippet and kellerjordan’s Modded-NanoGPT result on Newton-Muon . Sparse attention design space continues to diversify : MiniMax teased M3 as open source , and follow-on technical commentary suggested a new block-sparse two-stage attention path. @kimmonismus summarized the reported speedups : 9.7× prefilling and 15.6× decoding at 1M tokens versus M2. @eliebakouch added that M3 appears to move back to GQA-based
+
+sparse attention with block selection on real KV, distinct from DeepSeek’s compressed-attention variants.
+
+Vision/open model releases and ranking updates : PrismML released Bonsai Image 4B , including 1-bit and ternary
+
+variants intended to run locally on laptops and phones; a follow-up noted browser-local execution was possible at ~3GB footprint. On the closed side,
+
+Microsoft’s MAI-Image-2.5 debuted at #3 on the Image Arena , breaking a top-5 club previously dominated by OpenAI and Google, with Arena reporting a 1,254 score . Meanwhile, Artificial Analysis measured Gemini 3.5 Flash at up to ~280 output tok/s with materially stronger agentic performance, but at ~5× the cost of Gemini 3 Flash. Infra, Systems, and the Semiconductor Stack
+
+Huawei’s “τ scaling” paper was read mostly as an engineering roadmap, not a new law
+
+: A very detailed thread argued Huawei’s “A Time Scaling Theory for Multi-Layer Electronic Systems” should be interpreted as a strategic manifesto / white paper . The core proposal is to treat time constant τ
+
+, not process node, as the unifying metric across device, chip, and datacenter scales. The most concrete claims concerned
+
+LogicFolding on a future Kirin design, including +55% density , +41% energy efficiency , and +13% frequency at fixed node, plus packaging/network ideas like a Unified Bus and Hi-ONE optical I/O
+
+. The same thread was careful to note missing validation artifacts—die photos, SEMs, workload details, yield curves—and to interpret the most eye-catching numbers as promising but
+
+unverified
+
+. Follow-up reactions also stressed that Huawei’s path may rely more on packaging and architecture than lithographic catch-up, e.g.
+
+@josiah_leee citing Jensen’s point that most of Hopper→Blackwell’s gains came from non-node optimizations.
+
+Datacenter power and inference supply constraints are becoming first-order concerns
+
+: SemiAnalysis published on the 800VDC transition , and John Carmack recommended it
+
+, highlighting crossovers from EV power electronics into datacenter design, including high-voltage SiC parts. Separately,
+
+Epoch AI estimated a possible inference compute crunch
+
+: demand appears to be growing faster than serving capacity, especially for long-context workloads. Their rough model suggested that while current global Blackwell supply could serve today’s demand under favorable assumptions, throughput degrades sharply with longer contexts and demand growth may already be outrunning supply.
+
+Production Tooling and Developer Infrastructure Serving/inference stacks got meaningful performance and observability updates : vLLM merged a Rust frontend as a drop-in alternative to the Python API server, with early numbers showing ~837 req/s vs ~162 req/s on a preprocess-heavy workload in a single process. W&B launched an MCP server
+
+to let coding agents inspect experiments and training runs, with a schema-first redesign aimed at avoiding context-window blowups.
+
+Unsloth added support for running GPT, Claude, and other APIs inside its local UI
+
+, including prompt caching and code execution.
+
+Cloudflare, OpenRouter, and vector/retrieval vendors pushed the “productionization” layer
+
+: OpenRouter announced a $113M Series B and said weekly volume had grown from 5T to 25T tokens over six months. Cloudflare relaunched its startups program with up to $350k in credits, while separate posts around Think
+
+and agent ergonomics emphasized durable turns, reconnects, stale-state handling, and recovery as key practical differentiators. On retrieval infra,
+
+Booking.com discussed scaling to 100M+ embeddings
+
+, including filtered vector search, reads-during-writes, concurrency, and human-in-the-loop evals for partner messaging agents.
+
+Top tweets (by engagement) Codex / agentic coding in practice : The highest-signal product-use tweet was
+
+@bunkaich showing Codex help reverse-engineer and patch firmware on a cheap MP3 player
+
+, with the workflow spanning chip inspection, OS extraction, binary analysis, and flashing a modified image.
+
+DeepSWE benchmark launch : @serenaa_ge’s DeepSWE announcement
+
+became the main reference point for “does this match real coding experience?” discussion.
+
+Claude Code security plugin : @ClaudeDevs’ release stood out because it paired a concrete product launch with an internal metric: 30–40% fewer security-related PR comments. OpenRouter financing + production token growth : @OpenRouter’s $113M Series B
+
+is one of the clearer market signals that routing and multi-model infra are now seen as durable platform layers.
+
+vLLM Rust frontend : @vllm_project’s merge announcement
+
+mattered for anyone hitting CPU/API-server bottlenecks in high-throughput serving.
+
+AI Reddit Recap /r/LocalLlama + /r/localLLM Recap 1. Qwen 3.7 Launch and Qwen 3.6 Local Performance Waiting for Qwen 3.7 open weight... The new King has arrived... (Activity: 1217): The image is a benchmark/marketing comparison from the Qwen3.7 blog
+
+positioning Qwen3.7-Max as a leading frontier model across agentic coding, software engineering, MCP/tool-use, reasoning, and knowledge evaluations versus Qwen3.6-Plus, DS-V4-Pro Max, GLM-5.1, Kimi K2.6, and Claude Opus-4.6 Max. The technical significance is that the slide frames Qwen3.7-Max as highly competitive with or ahead of Claude-class models on many benchmarks, though Claude Opus-4.6 Max still appears to lead on some tasks such as
+
+ClawEval and CoWorkBench
+
+. Commenters note that this is the Max model, not necessarily representative of smaller/open-weight releases, and speculate about a potential
+
+3.7-122B-A17B MXFP4 model with 512k context for local hardware such as Strix Halo. The main debate is skepticism around open weights: commenters point out that Qwen has historically not open-weighted the Max series
+
+, so the title’s “waiting for open weight” framing may be unrealistic. Others caution not to expect a hypothetical
+
+27B model to match the shown Max-tier benchmark results. Several commenters distinguish Qwen Max from likely open-weight releases, noting that “Qwen has never open-weighted the Max series” and warning not to expect a smaller 27B
+
+variant to match Max-level benchmark performance. The implied technical takeaway is that any public/open-weight Qwen 3.7 release may use a different architecture/scale than the benchmarked flagship model.
+
+One technical wishlist centers on a hypothetical Qwen 3.7 122B-A17B MTP MXFP4 model with 512k context, which commenters argue would be well-suited to Strix Halo -class local hardware. Another user references Qwen 3.5 397B-A17B NVFP4 , claiming it fits on 4x RTX 6000 Pro GPUs with enough memory headroom for roughly 10 concurrent 200k
+
+-token sessions, positioning it as a potential “Opus at home” if Qwen 3.7 matches reported benchmarks.
+
+A commenter argues that open-weight frontier releases may be less likely because highly capable local models can undermine provider monetization. They claim Qwen’s strategy has shifted from disruption toward monetized frontier competition, which could affect whether large MoE models like
+
+397B-A17B are released openly. Qwen3.6 35Ba3 has changed my workflows and even how I use my computer (Activity: 567): The post describes a local-agent workflow using Qwen3.6 35B a3 via pi
+
+, where the user converts repeatable procedures into “skills” generated/documented by Codex, then reuses them for VPS DevOps,
+
+docling
+
+PDF→EPUB conversion, Playwright testing, code tickets, and OS-level shell tasks. A concrete example: WhatsApp audio → transcription in AnythingLLM →
+
+content.md → locally generated landing page, then a plan.md ticket queue executed by a “manager” pi process spawning fresh-context sub-agents with pi -p @plan.md "Check the first Ticket with Status UNDONE and do it" , marking tickets DONE , committing via git, and finally deploying via a VPS skill.
+
+Commenters focused on operational concerns: what hardware can run this setup, whether the agent is sandboxed/trustworthy with OS access, and how hard
+
+pi is to adopt compared with other agentic tools such as Hermes. A user reports running unsloth/Qwen3.6-35B-A3B-MTP-GGUF via Unsloth Studio on an MS-02 with a 24GB RTX Pro 4000 Blackwell SFF GPU , consistently seeing >100 tokens/s . They compare performance to “unoptimized GGUFs” on a Mac Studio M2
+
+, using the MS-02 as a small remote GPU server for the Mac workstation, and note that
+
+future MLX support in Unsloth could improve Mac-side performance. Screenshot: preview.redd.it . 110 tok/s with 12GB VRAM on Qwen3.6 35B A3B and ik_llama.cpp (Activity: 565): The post benchmarks Qwen3.6-35B-A3B MTP using byteshape’s IQ4_XS 4.19 bpw GGUF on an RTX 4070 Super 12GB + Ryzen 7 9700X, comparing upstream llama.cpp vs ik_llama.cpp with --ctx-size 131072 , q8_0 KV cache, MTP draft max 3 , and p_min=0.75 . Using the same mtp-bench.py workload, upstream llama.cpp averaged 89.76 tok/s with aggregate MTP accept rate 0.9393 , while ik_llama.cpp averaged 110.24 tok/s over 16.64s , a claimed 23% throughput gain, despite lower aggregate accept rate 0.8749 in the updated results. The OP attributes practical fit to --fit / --fit-margin 1664 on ik_llama.cpp , with OOM mitigation by raising --fit-margin to 1792 or 2048 , and notes that running the display on an iGPU frees essentially all 12GB VRAM for inference. Commenters focused on reproducibility: they requested the full upstream llama.cpp
+
+command and noted that several MTP-related PRs had merged recently, so benchmark timing may depend strongly on build date. One technical workaround suggested for single-GPU CachyOS/KDE users is a software-rendered Plasma Wayland session using
+
+LIBGL_ALWAYS_SOFTWARE=1 and GALLIUM_DRIVER=llvmpipe , reducing idle VRAM from roughly >1024MB to 126MB at the cost of slow/disabled compositor effects.
+
+A CachyOS/KDE Wayland user described a VRAM-saving workaround for single-GPU systems: create a custom SDDM session that forces KDE Plasma to render via CPU using
+
+LIBGL_ALWAYS_SOFTWARE=1 , GALLIUM_DRIVER=llvmpipe , and KWIN_COMPOSE=Q . They reported KDE Wayland idle VRAM dropping from > 1024 MB to ~ 126 MB
+
+, freeing nearly a gigabyte of VRAM for running the 35B model, at the cost of disabled or very slow compositor animations.
+
+Several commenters focused on whether the reported 110 tok/s comes from ik_llama.cpp having better MTP/speculative decoding behavior than upstream llama.cpp . One noted that ik_llama.cpp’s acceptance rate was reportedly never below 0.790 , while llama.cpp dropped as low as 0.477
+
+, asking for the exact llama.cpp command/settings and noting that multiple MTP-related PRs had landed in llama.cpp within the previous 24 hours.
+
+A commenter asked about the IQ4_XS quantization used for Qwen3.6 35B A3B
+
+, noting it appears to be the lowest-memory Q4 quant and requesting details on both model quality/intelligence impact and the final VRAM/RAM split. This highlights the key tradeoff for 12 GB VRAM runs: fitting the model via aggressive quantization versus maintaining reasoning quality and avoiding excessive CPU/RAM offload bottlenecks.
+
+Keep reading with a 7-day free trial Subscribe to Latent.Space
+
+to keep reading this post and get 7 days of free access to the full post archives.
+
+Start trial Already a paid subscriber? Sign in Previous
